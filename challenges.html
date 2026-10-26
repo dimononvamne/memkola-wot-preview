@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1018">
+  <title>Блиц-бинго · Челленджи — MEMKOLA WOT</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Девять заданий, финальный босс и 25 боёв. Следи за прохождением Блиц-бинго MEMKOLA в прямом эфире.">
+  <link rel="stylesheet" href="./challenges.css?v=1.45">
+  <link rel="stylesheet" href="./site-background.css?v=4.9">
+  <script src="./config.js"></script>
+  <script defer src="./site-background.js?v=4.8"></script>
+  <script type="module" src="./challenges.js?v=1.45"></script>
+  <script defer src="./visits-tracker.js"></script>
+  <link rel="stylesheet" href="./site-nav.css?v=1">
+  <script defer src="./site-nav.js?v=1"></script>
+  <script defer src="./challenge-visibility.js?v=1.45"></script>
+</head>
+<body class="challenges-page">
+  <header class="topbar">
+    <div class="shell navigation">
+      <a class="brand" href="./index.html">MEM<span>KOLA</span><small>WOT</small></a>
+      <nav aria-label="Разделы сайта">
+        <a href="./index.html">Тир-листы</a><a class="nav-current" href="./challenges.html" aria-current="page">Челленджи</a><a href="./tournaments.html">Турниры</a><a href="./wheel.html">Колесо</a>
+      <a href="./calculator.html">Калькулятор</a></nav>
+      <button class="button ghost" id="auth-button" type="button" disabled>Вход оператора</button>
+    </div>
+  </header>
+  <main class="shell">
+    <section id="loading-message" class="closed-message">Подключаем табло…</section>
+    <section id="closed-message" class="closed-message" hidden>
+      <div class="closed-icon" aria-hidden="true">🎯</div>
+      <h1>Сейчас челленджа нет</h1>
+      <p>Когда оператор запустит следующий челлендж, табло появится здесь автоматически.</p>
+    </section>
+    <div id="challenge-content" hidden>
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">MEMKOLA <span>/</span> ЧЕЛЛЕНДЖИ</p>
+        <h1>БЛИЦ<span>БИНГО</span><i class="heading-grid" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></i></h1>
+        <p class="subtitle">Девять заданий. Один босс. <strong id="subtitle-limit">25 боёв на всё.</strong></p>
+      </div>
+      <div class="heading-actions"><span id="role-label" class="role-label">Табло зрителя</span><a class="button ghost" id="stream-link" href="./challenges.html?view=stream" target="_blank" rel="noopener">Табло для стрима ↗</a></div>
+    </section>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <div class="board-toolbar">
+      <div class="legend" aria-label="Сложность заданий"><span class="easy"><i></i>Лёгкие</span><span class="medium"><i></i>Средние</span><span class="hard"><i></i>Трудные</span><span class="final"><i></i>Финал 3D</span></div>
+      <div class="sync-line"><span class="sync-dot" id="sync-dot"></span><span id="sync-label">Подключаем табло…</span></div>
+    </div>
+    <div id="result-banner" class="result-banner" aria-live="polite" hidden></div>
+    <div class="arena">
+      <section class="missions" aria-label="Задания Блиц-бинго">
+        <div id="mission-grid" class="mission-grid"></div>
+        <div id="boss-slot"></div>
+        <div class="board-caption"><span>X УРОВЕНЬ</span><span>СОЛО</span><span>ОБЫЧНЫЕ БОИ</span><span>1 БОЙ = 1 ЗАДАНИЕ</span></div>
+      </section>
+      <aside class="sidebar" aria-label="Ход челленджа">
+        <section class="counter-panel panel">
+          <div class="panel-top"><span class="eyebrow">БОЕВОЙ СЧЁТЧИК</span><span id="run-number" class="run-tag">ЗАХОД 01</span></div>
+          <button id="edit-limit-button" class="counter-settings" type="button" hidden>⚙ Изменить лимит боёв</button>
+          <div class="battle-counter"><strong id="battle-count">0</strong><span id="battle-limit">/ 25</span></div>
+          <div class="counter-label">боёв проведено <span id="remaining-count">25 осталось</span></div>
+          <div class="attempt-track" id="attempt-track" aria-hidden="true"></div>
+          <div class="mission-progress"><span>Задания выполнены</span><strong id="completed-count">0 <small>/ 10</small></strong></div>
+          <div class="progress-track"><i id="progress-fill"></i></div>
+        </section>
+        <section class="active-panel panel" id="active-panel">
+          <p class="eyebrow" id="active-kicker">ТЕКУЩЕЕ ЗАДАНИЕ</p>
+          <h2 id="active-title">Ожидаем выбор оператора</h2>
+          <p id="active-description">Выбранная карточка появится здесь.</p>
+          <div id="active-number" class="next-battle" hidden></div>
+          <div id="operator-actions" hidden>
+            <button class="button success full" id="success-button" type="button">✓ Задание выполнено</button>
+            <button class="button ghost full" id="failure-button" type="button">Бой без выполнения</button>
+            <button class="text-button" id="clear-button" type="button">Снять выбор без учёта боя</button>
+          </div>
+        </section>
+        <section class="operator-panel panel" id="operator-panel" hidden>
+          <div class="panel-top"><span class="eyebrow">ПУЛЬТ ОПЕРАТОРА</span><span class="operator-dot"></span></div>
+          <div class="challenge-publish">
+            <span id="publish-status" class="publish-status" role="status">○ ВЫКЛЮЧЕН · видит только оператор</span>
+            <button id="publish-toggle" class="button full publish-toggle" type="button" aria-pressed="false">▶ Включить челлендж для зрителей</button>
+            <span class="publish-help">Можно подготовить карточки и лимит заранее. Выключение не удаляет результаты.</span>
+          </div>
+          <p>Выбери карточку перед боем. После боя отметь результат — счётчик обновится сам.</p>
+          <button class="button gold full" id="edit-button" type="button">⚙ Настроить карточки и условия</button>
+          <button class="button ghost full" id="undo-button" type="button">↶ Отменить последний результат</button>
+          <div class="operator-tools"><button class="text-button" id="reset-button" type="button">↻ Новый заход</button></div>
+        </section>
+        <section class="history-panel panel" id="history-panel" hidden>
+          <p class="eyebrow">ПОСЛЕДНИЕ БОИ</p><ol id="battle-history"></ol>
+        </section>
+      </aside>
+    </div>
+    <details class="rules"><summary>Правила Блиц-бинго <span>+</span></summary><div><p>Все условия одной карточки выполняются в одном бою. Указанные числа означают «не менее». Задание выбирается до боя, засчитывается только оно. Одновременно закрыть несколько карточек нельзя.</p><p>Первые девять карточек можно выбирать в любом порядке. После их выполнения открывается финальный босс. Все успешные и неудачные бои входят в установленный оператором лимит. Ничья не считается победой.</p><p>Управляет табло оператор. Стример и зрители видят тот же прогресс с автоматическим обновлением. Условия и лимит можно изменять в пульте оператора.</p></div></details>
+    </div><!-- challenge-content -->
+  </main>
+  <footer class="shell footer"><span>MEMKOLA WOT <i>/</i> Челлендж принят.</span><a href="./index.html">На главную ↗</a></footer>
+  <dialog id="login-dialog"><form id="login-form" class="modal"><div class="modal-heading"><h2>Вход оператора</h2><button class="close-button" type="button" data-close="login-dialog" aria-label="Закрыть">×</button></div><p>Тот же аккаунт администратора, что используется на сайте.</p><label>Email<input id="login-email" type="email" autocomplete="username" required></label><label>Пароль<input id="login-password" type="password" autocomplete="current-password" required></label><p id="login-error" class="form-error" role="alert"></p><button class="button gold full" id="login-submit" type="submit">Войти</button></form></dialog>
+  <dialog id="reset-dialog"><div class="modal"><div class="modal-heading"><h2>Начать новый заход?</h2><button class="close-button" type="button" data-close="reset-dialog" aria-label="Закрыть">×</button></div><p>Галочки и история текущего захода будут очищены. Счётчик вернётся к <span id="reset-limit">0 / 25</span>, а финал снова закроется. Условия заданий сохранятся.</p><div class="dialog-actions"><button class="button ghost" type="button" data-close="reset-dialog">Продолжить текущий</button><button class="button gold" id="confirm-reset" type="button">Начать заново</button></div></div></dialog>
+  <dialog id="edit-dialog" class="edit-dialog"><form class="modal" id="edit-form"><div class="modal-heading"><h2>Редактор карточек</h2><button class="close-button" type="button" data-close="edit-dialog" aria-label="Закрыть">×</button></div><p>Задавай названия и условия сам для каждого стрима: 3 зелёные, 3 жёлтые, 3 красные карточки и финал. Изменения сразу увидят зрители и стример.</p>
+        <label class="limit-input-wrap">Лимит боёв для этого захода <input id="edit-battle-limit" type="number" inputmode="numeric" min="1" max="200" step="1" required></label>
+        <p id="edit-limit-hint" class="field-hint"></p>
+        <div id="edit-fields"></div><p id="edit-error" class="form-error" role="alert"></p><div class="dialog-actions"><button class="button ghost" id="default-tasks" type="button">Исходные задания</button><button class="button gold" id="save-tasks" type="submit">Сохранить задания</button></div></form></dialog>
+  <dialog id="limit-dialog"><form class="modal" id="limit-form"><div class="modal-heading"><h2>Лимит боёв</h2><button class="close-button" type="button" data-close="limit-dialog" aria-label="Закрыть">×</button></div><p>Количество боёв для текущего челленджа. Счётчик и шкала у всех зрителей обновятся автоматически.</p><label>Количество боёв<input id="limit-input" type="number" inputmode="numeric" min="1" max="200" step="1" required></label><p class="field-hint" id="limit-hint"></p><p class="form-error" id="limit-error" role="alert"></p><div class="dialog-actions"><button class="button ghost" type="button" data-close="limit-dialog">Отмена</button><button class="button gold" id="save-limit" type="submit">Сохранить лимит</button></div></form></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="notice">Для обновления табло включи JavaScript в браузере.</p></noscript>
+</body>
+</html>

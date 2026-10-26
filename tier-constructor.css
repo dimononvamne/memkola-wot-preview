@@ -1,0 +1,27 @@
+/* Owner-only tier-list constructor overlay. Existing main-site styles remain untouched. */
+[hidden]{display:none!important}
+.board-tabs{grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:10px}
+.board-tab{min-height:102px;padding:10px 7px;gap:8px}
+.board-icon{width:44px;height:44px}
+.board-icon svg,.board-icon img{width:44px;height:44px;object-fit:contain;filter:drop-shadow(0 4px 6px rgba(0,0,0,.35))}
+.board-tab.active .board-icon svg,.board-tab.active .board-icon img{transform:scale(1.05)}
+.tier-category-admin{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;margin:0 0 20px;padding:18px 20px;background:linear-gradient(125deg,#263243,#101a27);border:1px solid rgba(240,193,106,.34);border-radius:14px}
+.tier-category-admin-copy{display:flex;flex-direction:column;gap:7px;max-width:490px}
+.tier-category-admin-copy strong{font-family:Oxanium,Manrope,sans-serif;color:#f6cb83;letter-spacing:1.1px;font-size:14px}
+.tier-category-admin-copy span{color:#b4c0ce;line-height:1.5;font-size:12px}
+.tier-category-admin-actions{display:flex;flex-wrap:wrap;gap:8px}
+.tier-category-admin-actions .button{white-space:nowrap}
+.tier-cat-dialog{max-width:800px;width:min(800px,calc(100% - 24px))}
+.tier-cat-modal-content{max-width:none;width:100%}
+.tier-cat-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tier-cat-icon-label{margin:22px 0 12px;color:#f1c37c;letter-spacing:1.5px;font-size:11px;font-weight:800}
+.tier-cat-icons{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}
+.tier-cat-icon-option{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:9px;min-height:102px;background:#111d2b;border:1px solid #344150;border-radius:13px;color:#d4dce6;font-size:11px;font-weight:800;text-align:center;cursor:pointer;padding:9px 5px;transition:background .15s,border-color .15s}
+.tier-cat-icon-option:hover{background:#1e2b3b;border-color:#aa8650}
+.tier-cat-icon-option.selected{background:linear-gradient(145deg,#3d3020,#192431);border-color:#e2ae69;color:#ffdc9c}
+.tier-cat-icon-option input{position:absolute;opacity:0;width:1px;height:1px}
+.tier-cat-icon-option:focus-within{outline:2px solid #e8b86f;outline-offset:2px}
+.tier-cat-icon-art{width:50px;height:50px;display:grid;place-items:center}
+.tier-cat-icon-art svg,.tier-cat-icon-art img{width:50px;height:50px;object-fit:contain;filter:drop-shadow(0 4px 5px #0007)}
+.tier-cat-modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:20px}
+@media(max-width:760px){.board-tabs{display:flex;overflow-x:auto;gap:9px}.board-tab{flex:0 0 112px;min-width:112px}.tier-cat-icons{grid-template-columns:repeat(3,minmax(0,1fr))}.tier-cat-fields{grid-template-columns:1fr}.tier-category-admin-actions .button{flex:1 1 auto}}

@@ -1,0 +1,6703 @@
+{
+  "schema_version": 1,
+  "client": "wg",
+  "version": "11.21",
+  "game_version": "11.21.0.19_7374677",
+  "retrieved_at": "2026-10-26",
+  "vehicle_count": 742,
+  "source": {
+    "provider": "BlitzInfo / BilkoWB/blitzinfo_assets",
+    "url": "https://github.com/BilkoWB/blitzinfo_assets/tree/main/data/wg/11.21",
+    "git_tree_sha": "15cde368d65de04a2ce31cd498675b8b0b9b9286",
+    "files": {
+      "tanks.json": {
+        "git_blob_sha": "5aff6f03d6d80235272d5d6697aae7b3a0771580",
+        "sha256": "2e8481d918a33ab73da9e0d7d19414f01e5e790d8b6219db747cff6c319962b6"
+      },
+      "meta.json": {
+        "git_blob_sha": "bf814fe7c677f88f99cacc92b8ad53c09037d18a",
+        "sha256": "2555f3fdf891c824c1283af1e90fd9223d22400f04f11eb5d9c3584d1a8e3e87"
+      }
+    }
+  },
+  "vehicles": {
+    "1": {
+      "name": "Т-34",
+      "game_code": "ussr-T-34",
+      "nation": "ussr",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17": {
+      "name": "Pz.Kpfw. IV Ausf. G",
+      "game_code": "germany-PzIV",
+      "nation": "germany",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "33": {
+      "name": "T14",
+      "game_code": "usa-T14",
+      "nation": "usa",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "49": {
+      "name": "Type 59",
+      "game_code": "china-Ch01_Type59",
+      "nation": "china",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "81": {
+      "name": "Vickers Medium Mk. I",
+      "game_code": "uk-GB01_Medium_Mark_I",
+      "nation": "uk",
+      "tier": 1,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": true
+    },
+    "113": {
+      "name": "Vindicator Ultramarines",
+      "game_code": "other-Oth08_WH_Vindicator",
+      "nation": "other",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "257": {
+      "name": "СУ-85",
+      "game_code": "ussr-SU-85",
+      "nation": "ussr",
+      "tier": 5,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "289": {
+      "name": "M3 Stuart",
+      "game_code": "usa-M3_Stuart",
+      "nation": "usa",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "321": {
+      "name": "D2",
+      "game_code": "france-D2",
+      "nation": "france",
+      "tier": 3,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "337": {
+      "name": "Vickers Medium Mk. II",
+      "game_code": "uk-GB05_Vickers_Medium_Mk_II",
+      "nation": "uk",
+      "tier": 2,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "353": {
+      "name": "Chi-Ni",
+      "game_code": "japan-Chi_Ni",
+      "nation": "japan",
+      "tier": 2,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "385": {
+      "name": "Progetto M40 mod. 65",
+      "game_code": "european-It08_Progetto_M40_mod65",
+      "nation": "european",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "513": {
+      "name": "ИС",
+      "game_code": "ussr-IS",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "529": {
+      "name": "Tiger I",
+      "game_code": "germany-PzVI",
+      "nation": "germany",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "545": {
+      "name": "T1 Cunningham",
+      "game_code": "usa-T1_Cunningham",
+      "nation": "usa",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": true
+    },
+    "577": {
+      "name": "Renault FT",
+      "game_code": "france-RenaultFT",
+      "nation": "france",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": true
+    },
+    "593": {
+      "name": "Sherman Firefly",
+      "game_code": "uk-GB19_Sherman_Firefly",
+      "nation": "uk",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "609": {
+      "name": "Renault Otsu",
+      "game_code": "japan-NC27",
+      "nation": "japan",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": true
+    },
+    "625": {
+      "name": "Stridsvagn 74A2",
+      "game_code": "other-Strv_74A2",
+      "nation": "other",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "641": {
+      "name": "Prototipo Standard B",
+      "game_code": "european-It12_Prototipo_Standard_B",
+      "nation": "european",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "769": {
+      "name": "БТ-7",
+      "game_code": "ussr-BT-7",
+      "nation": "ussr",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "785": {
+      "name": "Pz.Kpfw. 35 (t)",
+      "game_code": "germany-Pz35t",
+      "nation": "germany",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "801": {
+      "name": "M6",
+      "game_code": "usa-M6",
+      "nation": "usa",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "817": {
+      "name": "WZ-111",
+      "game_code": "china-Ch03_WZ-111",
+      "nation": "china",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "849": {
+      "name": "Matilda",
+      "game_code": "uk-GB07_Matilda",
+      "nation": "uk",
+      "tier": 4,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "865": {
+      "name": "Type 95 Ha-Go",
+      "game_code": "japan-Ha_Go",
+      "nation": "japan",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "881": {
+      "name": "Edelweiss",
+      "game_code": "other-Sega_Edelweiss",
+      "nation": "other",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "897": {
+      "name": "P.44 Pantera",
+      "game_code": "european-It14_P44_Pantera",
+      "nation": "european",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1025": {
+      "name": "БТ-2",
+      "game_code": "ussr-BT-2",
+      "nation": "ussr",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1041": {
+      "name": "StuG III Ausf. G",
+      "game_code": "germany-StuGIII",
+      "nation": "germany",
+      "tier": 5,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "1057": {
+      "name": "M4 Sherman",
+      "game_code": "usa-M4_Sherman",
+      "nation": "usa",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1073": {
+      "name": "T-34-1",
+      "game_code": "china-Ch04_T34_1",
+      "nation": "china",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1089": {
+      "name": "B1",
+      "game_code": "france-B1",
+      "nation": "france",
+      "tier": 4,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1105": {
+      "name": "Cromwell",
+      "game_code": "uk-GB21_Cromwell",
+      "nation": "uk",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1121": {
+      "name": "Type 5 Chi-Ri",
+      "game_code": "japan-Chi_Ri",
+      "nation": "japan",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1137": {
+      "name": "Predator Ultramarines",
+      "game_code": "other-Oth09_WH_Predator",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1153": {
+      "name": "P.43 ter",
+      "game_code": "european-It09_P43_ter",
+      "nation": "european",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1297": {
+      "name": "Panther I",
+      "game_code": "germany-PzV",
+      "nation": "germany",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1313": {
+      "name": "M4A3E8 Sherman",
+      "game_code": "usa-M4A3E8_Sherman",
+      "nation": "usa",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1329": {
+      "name": "Renault NC-31",
+      "game_code": "china-Ch06_Renault_NC31",
+      "nation": "china",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": true
+    },
+    "1361": {
+      "name": "Churchill Mk. VI",
+      "game_code": "uk-GB_Churchill_MkVI",
+      "nation": "uk",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1377": {
+      "name": "Type 3 Chi-Nu",
+      "game_code": "japan-Chi_Nu",
+      "nation": "japan",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1393": {
+      "name": "Nameless",
+      "game_code": "other-Sega_Nameless",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1409": {
+      "name": "P.43 bis",
+      "game_code": "european-It10_P43_bis",
+      "nation": "european",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1537": {
+      "name": "Т-28 обр. 1940 г.",
+      "game_code": "ussr-T-28",
+      "nation": "ussr",
+      "tier": 4,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1553": {
+      "name": "Jagdpanzer IV",
+      "game_code": "germany-JagdPzIV",
+      "nation": "germany",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "1569": {
+      "name": "T20",
+      "game_code": "usa-T20",
+      "nation": "usa",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1585": {
+      "name": "T-34-2",
+      "game_code": "china-Ch05_T34_2",
+      "nation": "china",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1601": {
+      "name": "D1",
+      "game_code": "france-D1",
+      "nation": "france",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1617": {
+      "name": "Sherman V",
+      "game_code": "uk-GB_Sherman_V",
+      "nation": "uk",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1633": {
+      "name": "Type 1 Chi-He",
+      "game_code": "japan-Chi_He",
+      "nation": "japan",
+      "tier": 4,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1649": {
+      "name": "Хелсинг",
+      "game_code": "other-Van_Helsing",
+      "nation": "other",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "1665": {
+      "name": "Lago",
+      "game_code": "european-S04_Lago-I",
+      "nation": "european",
+      "tier": 4,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1809": {
+      "name": "Hetzer",
+      "game_code": "germany-Hetzer",
+      "nation": "germany",
+      "tier": 4,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "1825": {
+      "name": "M2 Light Tank",
+      "game_code": "usa-M2_lt",
+      "nation": "usa",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1841": {
+      "name": "WZ-120",
+      "game_code": "china-Ch18_WZ-120",
+      "nation": "china",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1857": {
+      "name": "Bat.-Châtillon 25 t AP",
+      "game_code": "france-F75_Char_de_25t",
+      "nation": "france",
+      "tier": 9,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1889": {
+      "name": "Type 4 Chi-To",
+      "game_code": "japan-Chi_To",
+      "nation": "japan",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1905": {
+      "name": "O-47",
+      "game_code": "other-Akawara",
+      "nation": "other",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "1921": {
+      "name": "Strv m/42",
+      "game_code": "european-S02_StrvM42",
+      "nation": "european",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2049": {
+      "name": "А-20",
+      "game_code": "ussr-A-20",
+      "nation": "ussr",
+      "tier": 4,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2065": {
+      "name": "Pz.Kpfw. II",
+      "game_code": "germany-PzII",
+      "nation": "germany",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2097": {
+      "name": "WZ-111 model 1-4",
+      "game_code": "china-Ch12_111_1_2_3",
+      "nation": "china",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2129": {
+      "name": "Crusader",
+      "game_code": "uk-GB20_Crusader",
+      "nation": "uk",
+      "tier": 5,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2145": {
+      "name": "Type 97 Chi-Ha",
+      "game_code": "japan-Chi_Ha",
+      "nation": "japan",
+      "tier": 3,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2161": {
+      "name": "WZ 135G FT Пылающий",
+      "game_code": "other-WZ-135G_FT",
+      "nation": "other",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "2177": {
+      "name": "14TP",
+      "game_code": "european-Pl07_14TP",
+      "nation": "european",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2305": {
+      "name": "СУ-152",
+      "game_code": "ussr-SU-152",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "2321": {
+      "name": "VK 36.01 (H)",
+      "game_code": "germany-VK3601H",
+      "nation": "germany",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2353": {
+      "name": "Vickers Mk. E Type B",
+      "game_code": "china-Ch07_Vickers_MkE_Type_BT26",
+      "nation": "china",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2369": {
+      "name": "FCM 36 Pak 40",
+      "game_code": "france-FCM_36Pak40",
+      "nation": "france",
+      "tier": 3,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "2385": {
+      "name": "Vickers Medium Mk. III",
+      "game_code": "uk-GB06_Vickers_Medium_Mk_III",
+      "nation": "uk",
+      "tier": 3,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2401": {
+      "name": "Type 98 Ke-Ni",
+      "game_code": "japan-Ke_Ni",
+      "nation": "japan",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2433": {
+      "name": "10TP",
+      "game_code": "european-Pl06_10TP",
+      "nation": "european",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2561": {
+      "name": "Т-34-85",
+      "game_code": "ussr-T-34-85",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2577": {
+      "name": "VK 30.01 (H)",
+      "game_code": "germany-VK3001H",
+      "nation": "germany",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2593": {
+      "name": "T30",
+      "game_code": "usa-T30",
+      "nation": "usa",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "2609": {
+      "name": "Type 64",
+      "game_code": "china-Ch24_Type64",
+      "nation": "china",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2625": {
+      "name": "ARL 44",
+      "game_code": "france-ARL_44",
+      "nation": "france",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2657": {
+      "name": "STA-1",
+      "game_code": "japan-STA_1",
+      "nation": "japan",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2689": {
+      "name": "Vickers Mk. F",
+      "game_code": "european-F01_Vickers_MkF",
+      "nation": "european",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2817": {
+      "name": "КВ-1С",
+      "game_code": "ussr-KV-1s",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2849": {
+      "name": "T34",
+      "game_code": "usa-T34_hvy",
+      "nation": "usa",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2865": {
+      "name": "WZ-110",
+      "game_code": "china-Ch11_110",
+      "nation": "china",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2881": {
+      "name": "AMX 40",
+      "game_code": "france-AMX40",
+      "nation": "france",
+      "tier": 4,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2897": {
+      "name": "Churchill I",
+      "game_code": "uk-GB08_Churchill_I",
+      "nation": "uk",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2913": {
+      "name": "Type 5 Ke-Ho",
+      "game_code": "japan-Ke_Ho",
+      "nation": "japan",
+      "tier": 4,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "2945": {
+      "name": "Progetto M35 mod. 46",
+      "game_code": "european-It13_Progetto_M35_mod_46",
+      "nation": "european",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3073": {
+      "name": "Т-46",
+      "game_code": "ussr-T-46",
+      "nation": "ussr",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3089": {
+      "name": "Leichttraktor",
+      "game_code": "germany-Ltraktor",
+      "nation": "germany",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": true
+    },
+    "3105": {
+      "name": "M3 Lee",
+      "game_code": "usa-M3_Grant",
+      "nation": "usa",
+      "tier": 4,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3121": {
+      "name": "M5A1 Stuart",
+      "game_code": "china-Ch09_M5",
+      "nation": "china",
+      "tier": 4,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3137": {
+      "name": "AMX 50 100",
+      "game_code": "france-AMX_50_100",
+      "nation": "france",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3153": {
+      "name": "Black Prince",
+      "game_code": "uk-GB10_Black_Prince",
+      "nation": "uk",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3201": {
+      "name": "50TP prototyp",
+      "game_code": "european-Pl08_50TP_prot",
+      "nation": "european",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3329": {
+      "name": "МС-1 обр. 1",
+      "game_code": "ussr-MS-1",
+      "nation": "ussr",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": true
+    },
+    "3345": {
+      "name": "Pz.Kpfw. 38 (t)",
+      "game_code": "germany-Pz38t",
+      "nation": "germany",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3361": {
+      "name": "T1 Heavy Tank",
+      "game_code": "usa-T1_hvy",
+      "nation": "usa",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3377": {
+      "name": "WZ-131",
+      "game_code": "china-Ch16_WZ_131",
+      "nation": "china",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3425": {
+      "name": "Type 61",
+      "game_code": "japan-Type_61",
+      "nation": "japan",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3457": {
+      "name": "Emil I",
+      "game_code": "european-S18_EMIL_1951E1",
+      "nation": "european",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3585": {
+      "name": "СУ-100",
+      "game_code": "ussr-SU-100",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "3601": {
+      "name": "Panzerjäger I",
+      "game_code": "germany-PanzerJager_I",
+      "nation": "germany",
+      "tier": 2,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "3633": {
+      "name": "IS-2",
+      "game_code": "china-Ch10_IS2",
+      "nation": "china",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3649": {
+      "name": "Bat.-Châtillon 25 t",
+      "game_code": "france-Bat_Chatillon25t",
+      "nation": "france",
+      "tier": 10,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3681": {
+      "name": "STB-1",
+      "game_code": "japan-ST_B1",
+      "nation": "japan",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3697": {
+      "name": "Lupus",
+      "game_code": "other-Oth06_Sega_Lupus",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3713": {
+      "name": "Strv 74",
+      "game_code": "european-S07_Strv_74",
+      "nation": "european",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3857": {
+      "name": "Jagdpanther",
+      "game_code": "germany-JagdPanther",
+      "nation": "germany",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "3873": {
+      "name": "T29",
+      "game_code": "usa-T29",
+      "nation": "usa",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3889": {
+      "name": "WZ-132",
+      "game_code": "china-Ch17_WZ131_1_WZ132",
+      "nation": "china",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3905": {
+      "name": "AMX 50 120",
+      "game_code": "france-AMX_50_120",
+      "nation": "france",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3921": {
+      "name": "Caernarvon",
+      "game_code": "uk-GB11_Caernarvon",
+      "nation": "uk",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3937": {
+      "name": "Ho-Ri Type III",
+      "game_code": "japan-J20_Ho_Ri_type3",
+      "nation": "japan",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "3953": {
+      "name": "T 55A",
+      "game_code": "other-Oth11_T-55A",
+      "nation": "other",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "3969": {
+      "name": "Leo",
+      "game_code": "european-S13_Leo",
+      "nation": "european",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4113": {
+      "name": "VK 30.02 (D)",
+      "game_code": "germany-VK3002DB",
+      "nation": "germany",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4145": {
+      "name": "WZ-121",
+      "game_code": "china-Ch19_121",
+      "nation": "china",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4193": {
+      "name": "Ho-Ri Type II",
+      "game_code": "japan-J21_Ho_Ri",
+      "nation": "japan",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "4209": {
+      "name": "WarDuck",
+      "game_code": "other-Oth10_WarDuck",
+      "nation": "other",
+      "tier": 1,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": true
+    },
+    "4225": {
+      "name": "Emil II",
+      "game_code": "european-S17_EMIL_1952E2",
+      "nation": "european",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4353": {
+      "name": "Т-44",
+      "game_code": "ussr-T-44",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4369": {
+      "name": "Pz.Kpfw. III",
+      "game_code": "germany-PzIII",
+      "nation": "germany",
+      "tier": 3,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4385": {
+      "name": "T32",
+      "game_code": "usa-T32",
+      "nation": "usa",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4401": {
+      "name": "Type 2597 Chi-Ha",
+      "game_code": "china-Ch08_Type97_Chi_Ha",
+      "nation": "china",
+      "tier": 3,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4417": {
+      "name": "AMX M4 mle. 54",
+      "game_code": "france-F82_AMX_M4_Mle1949_Ter",
+      "nation": "france",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4433": {
+      "name": "Conqueror",
+      "game_code": "uk-GB12_Conqueror",
+      "nation": "uk",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4449": {
+      "name": "IS-2 Pravda SP",
+      "game_code": "japan-IS-2_GuP",
+      "nation": "japan",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4465": {
+      "name": "Hafen",
+      "game_code": "other-Oth12_Sega_Hafen",
+      "nation": "other",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4481": {
+      "name": "Kranvagn",
+      "game_code": "european-S16_Kranvagn",
+      "nation": "european",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4609": {
+      "name": "Т-26",
+      "game_code": "ussr-T-26",
+      "nation": "ussr",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4657": {
+      "name": "Type T-34",
+      "game_code": "china-Ch21_T34",
+      "nation": "china",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4689": {
+      "name": "Churchill VII",
+      "game_code": "uk-GB09_Churchill_VII",
+      "nation": "uk",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4705": {
+      "name": "Firefly Saunders SP",
+      "game_code": "japan-Firefly_GuP",
+      "nation": "japan",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4721": {
+      "name": "Могильщик",
+      "game_code": "other-Oth14_MdM_AshKnight",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4737": {
+      "name": "EMIL 1951",
+      "game_code": "european-S25_EMIL_51",
+      "nation": "european",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4881": {
+      "name": "Pz.Kpfw. III Ausf. A",
+      "game_code": "germany-PzIII_A",
+      "nation": "germany",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4897": {
+      "name": "M2 Medium Tank",
+      "game_code": "usa-M2_med",
+      "nation": "usa",
+      "tier": 3,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4913": {
+      "name": "59-16",
+      "game_code": "china-Ch15_59_16",
+      "nation": "china",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4929": {
+      "name": "AMX 13 90",
+      "game_code": "france-AMX_13_90",
+      "nation": "france",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4945": {
+      "name": "Valentine Mk. IX",
+      "game_code": "uk-GB04_Valentine",
+      "nation": "uk",
+      "tier": 4,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4961": {
+      "name": "Ho-Ri Type I",
+      "game_code": "japan-J22_Ho_Ri_type96",
+      "nation": "japan",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "4977": {
+      "name": "Мародёр",
+      "game_code": "other-Oth15_RustCrab",
+      "nation": "other",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "4993": {
+      "name": "P.43/06 anniversario",
+      "game_code": "european-It10_P43_BD",
+      "nation": "european",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5121": {
+      "name": "АТ-1",
+      "game_code": "ussr-AT-1",
+      "nation": "ussr",
+      "tier": 2,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "5137": {
+      "name": "Tiger II",
+      "game_code": "germany-PzVIB_Tiger_II",
+      "nation": "germany",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5153": {
+      "name": "M5 Stuart",
+      "game_code": "usa-M5_Stuart",
+      "nation": "usa",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5169": {
+      "name": "Type 58",
+      "game_code": "china-Ch20_Type58",
+      "nation": "china",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5185": {
+      "name": "AMX 13 75",
+      "game_code": "france-AMX_13_75",
+      "nation": "france",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5201": {
+      "name": "Cruiser Mk. I",
+      "game_code": "uk-GB03_Cruiser_Mk_I",
+      "nation": "uk",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5217": {
+      "name": "Chi-To SPG",
+      "game_code": "japan-J23_Chi_To_SPG",
+      "nation": "japan",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "5233": {
+      "name": "Крушитель",
+      "game_code": "other-Oth16_KV_TG",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5249": {
+      "name": "Pudel",
+      "game_code": "european-Pl03_PzV_Pudel",
+      "nation": "european",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5377": {
+      "name": "ИС-3",
+      "game_code": "ussr-IS-3",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5393": {
+      "name": "VK 16.02 Leopard",
+      "game_code": "germany-VK1602",
+      "nation": "germany",
+      "tier": 5,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5409": {
+      "name": "M7",
+      "game_code": "usa-M7_med",
+      "nation": "usa",
+      "tier": 4,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5425": {
+      "name": "WZ-113",
+      "game_code": "china-Ch22_113",
+      "nation": "china",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5441": {
+      "name": "AMX 30 1er prototype",
+      "game_code": "france-F71_AMX_30_prototype",
+      "nation": "france",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5457": {
+      "name": "Comet",
+      "game_code": "uk-GB22_Comet",
+      "nation": "uk",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5473": {
+      "name": "Mitsu 108",
+      "game_code": "japan-J30_Mitsu_108",
+      "nation": "japan",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5489": {
+      "name": "Y5 T-34",
+      "game_code": "other-Oth17_BDT-5A",
+      "nation": "other",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5505": {
+      "name": "TVP T 50/51",
+      "game_code": "european-Cz04_T50_51",
+      "nation": "european",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5665": {
+      "name": "T2 Medium Tank",
+      "game_code": "usa-T2_med",
+      "nation": "usa",
+      "tier": 2,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5681": {
+      "name": "121B",
+      "game_code": "china-Ch25_121_mod_1971B",
+      "nation": "china",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5713": {
+      "name": "Centurion Mk. 7/1",
+      "game_code": "uk-GB24_Centurion_Mk3",
+      "nation": "uk",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5729": {
+      "name": "Ju-Nu",
+      "game_code": "japan-J29_Ju_Nu",
+      "nation": "japan",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5745": {
+      "name": "Y5 Firefly",
+      "game_code": "other-Oth18_BDT-5B",
+      "nation": "other",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5761": {
+      "name": "Škoda T 50",
+      "game_code": "european-Cz02_T50",
+      "nation": "european",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5889": {
+      "name": "КВ-3",
+      "game_code": "ussr-KV-3",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5921": {
+      "name": "M26 Pershing",
+      "game_code": "usa-Pershing",
+      "nation": "usa",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5937": {
+      "name": "59-Patton",
+      "game_code": "china-Ch26_59_Patton",
+      "nation": "china",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5953": {
+      "name": "AMX 38",
+      "game_code": "france-AMX38",
+      "nation": "france",
+      "tier": 2,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5969": {
+      "name": "Centurion Mk. I",
+      "game_code": "uk-GB23_Centurion",
+      "nation": "uk",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "5985": {
+      "name": "Ju-To",
+      "game_code": "japan-J28_Ju_To",
+      "nation": "japan",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6001": {
+      "name": "Y5 ELC bis",
+      "game_code": "other-Oth19_BDT-5C",
+      "nation": "other",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6017": {
+      "name": "TVP VTU Koncept",
+      "game_code": "european-Cz07_TVP_46",
+      "nation": "european",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6145": {
+      "name": "ИС-4",
+      "game_code": "ussr-IS-4",
+      "nation": "ussr",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6161": {
+      "name": "Pz.Kpfw. II Luchs",
+      "game_code": "germany-PzII_Luchs",
+      "nation": "germany",
+      "tier": 4,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6177": {
+      "name": "T18",
+      "game_code": "usa-T18",
+      "nation": "usa",
+      "tier": 2,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "6193": {
+      "name": "T-34-3",
+      "game_code": "china-Ch14_T34_3",
+      "nation": "china",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6209": {
+      "name": "AMX 50 B",
+      "game_code": "france-AMX_50B",
+      "nation": "france",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6225": {
+      "name": "FV215b",
+      "game_code": "uk-GB13_FV215b",
+      "nation": "uk",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6241": {
+      "name": "Chi-Se",
+      "game_code": "japan-J27_Chi_Se",
+      "nation": "japan",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6257": {
+      "name": "M4/FL10",
+      "game_code": "other-Oth20_M4FL10",
+      "nation": "other",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6273": {
+      "name": "Konštrukta T-34/100",
+      "game_code": "european-Cz05_T34-100",
+      "nation": "european",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6401": {
+      "name": "СУ-76",
+      "game_code": "ussr-SU-76",
+      "nation": "ussr",
+      "tier": 3,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "6417": {
+      "name": "Pz.Kpfw. III/IV",
+      "game_code": "germany-PzIII_IV",
+      "nation": "germany",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6433": {
+      "name": "T82",
+      "game_code": "usa-T82",
+      "nation": "usa",
+      "tier": 3,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "6449": {
+      "name": "WZ-113G FT",
+      "game_code": "china-CH38_WZ113G-FT",
+      "nation": "china",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "6465": {
+      "name": "AMX 12 t",
+      "game_code": "france-AMX_12t",
+      "nation": "france",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6481": {
+      "name": "Covenanter",
+      "game_code": "uk-GB60_Covenanter",
+      "nation": "uk",
+      "tier": 4,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6497": {
+      "name": "Type 68",
+      "game_code": "japan-J26_Type_68",
+      "nation": "japan",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6529": {
+      "name": "Škoda T 25",
+      "game_code": "european-Cz08_T-25",
+      "nation": "european",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6657": {
+      "name": "Т-43",
+      "game_code": "ussr-T-43",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6673": {
+      "name": "Marder II",
+      "game_code": "germany-G20_Marder_II",
+      "nation": "germany",
+      "tier": 3,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "6689": {
+      "name": "T49 ПТУР",
+      "game_code": "usa-T49_Rocket",
+      "nation": "usa",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": true
+    },
+    "6705": {
+      "name": "LT vz. 38",
+      "game_code": "china-Ch_LT_vz38",
+      "nation": "china",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6721": {
+      "name": "BDR G1 B",
+      "game_code": "france-BDR_G1B",
+      "nation": "france",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6753": {
+      "name": "Type 71",
+      "game_code": "japan-J25_Type71",
+      "nation": "japan",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6785": {
+      "name": "Škoda T 27",
+      "game_code": "european-Cz13_T-27",
+      "nation": "european",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6913": {
+      "name": "СУ-85Б",
+      "game_code": "ussr-GAZ-74b",
+      "nation": "ussr",
+      "tier": 4,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "6929": {
+      "name": "Maus",
+      "game_code": "germany-Maus",
+      "nation": "germany",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6945": {
+      "name": "M10 Wolverine",
+      "game_code": "usa-M10_Wolverine",
+      "nation": "usa",
+      "tier": 5,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "6961": {
+      "name": "WZ-120-1G FT",
+      "game_code": "china-Ch39_WZ120_1G_FT",
+      "nation": "china",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "6977": {
+      "name": "AMX M4 mle. 45",
+      "game_code": "france-AMX_M4_1945",
+      "nation": "france",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "6993": {
+      "name": "Cruiser Mk. II",
+      "game_code": "uk-GB69_Cruiser_Mk_II",
+      "nation": "uk",
+      "tier": 1,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7009": {
+      "name": "Type 57",
+      "game_code": "japan-J24_Type_57",
+      "nation": "japan",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7025": {
+      "name": "Vulcan",
+      "game_code": "other-Oth22_Sega_Vulcan",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7041": {
+      "name": "Turbo",
+      "game_code": "european-S07_Strv74BP",
+      "nation": "european",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7169": {
+      "name": "ИС-7",
+      "game_code": "ussr-IS-7",
+      "nation": "ussr",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7185": {
+      "name": "VK 30.01 (P)",
+      "game_code": "germany-VK3001P",
+      "nation": "germany",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7201": {
+      "name": "M36 Jackson",
+      "game_code": "usa-M36_Slagger",
+      "nation": "usa",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "7217": {
+      "name": "WZ-112-2",
+      "game_code": "china-Ch_WZ-112v2",
+      "nation": "china",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7249": {
+      "name": "FV4202",
+      "game_code": "uk-GB70_FV4202_105",
+      "nation": "uk",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7265": {
+      "name": "Ferrum",
+      "game_code": "japan-J29_Ju_Nu_BP",
+      "nation": "japan",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7281": {
+      "name": "Ликан",
+      "game_code": "other-Oth23_Werewolf",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7297": {
+      "name": "60TP Lewandowskiego",
+      "game_code": "european-Pl15_60TP",
+      "nation": "european",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7425": {
+      "name": "ИСУ-152",
+      "game_code": "ussr-ISU-152",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "7441": {
+      "name": "VK 45.02 (P) Ausf. B",
+      "game_code": "germany-VK4502P",
+      "nation": "germany",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7473": {
+      "name": "T-34-2G FT",
+      "game_code": "china-Ch35_T-34-2G_FT",
+      "nation": "china",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "7505": {
+      "name": "Cruiser Mk. IV",
+      "game_code": "uk-GB59_Cruiser_Mk_IV",
+      "nation": "uk",
+      "tier": 3,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7521": {
+      "name": "Type 5 Ka-Ri",
+      "game_code": "japan-J31_Type_5_Ka_Ri",
+      "nation": "japan",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "7537": {
+      "name": "Кошмар",
+      "game_code": "other-Oth24_StuH_42HW",
+      "nation": "other",
+      "tier": 5,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "7553": {
+      "name": "50TP Tyszkiewicza",
+      "game_code": "european-Pl05_50TP_Tyszkiewicza",
+      "nation": "european",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7697": {
+      "name": "Ferdinand",
+      "game_code": "germany-Ferdinand",
+      "nation": "germany",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "7713": {
+      "name": "T40",
+      "game_code": "usa-T40",
+      "nation": "usa",
+      "tier": 4,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "7729": {
+      "name": "WZ-131G FT",
+      "game_code": "china-Ch34_WZ-131G_FT",
+      "nation": "china",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "7745": {
+      "name": "Renault FT AC",
+      "game_code": "france-RenaultFT_AC",
+      "nation": "france",
+      "tier": 2,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "7761": {
+      "name": "Cruiser Mk. III",
+      "game_code": "uk-GB58_Cruiser_Mk_III",
+      "nation": "uk",
+      "tier": 2,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7777": {
+      "name": "Type 63",
+      "game_code": "japan-J36_Type_63_HT",
+      "nation": "japan",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7793": {
+      "name": "Уничтожитель",
+      "game_code": "other-Oth25_HWT20_FalconFire",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7809": {
+      "name": "53TP Markowskiego",
+      "game_code": "european-Pl13_53TP_Markowskiego",
+      "nation": "european",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7937": {
+      "name": "Т-54",
+      "game_code": "ussr-T-54",
+      "nation": "ussr",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "7953": {
+      "name": "Jagdtiger",
+      "game_code": "germany-JagdTiger",
+      "nation": "germany",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "7985": {
+      "name": "WZ-111-1G FT",
+      "game_code": "china-Ch36_WZ-111-1G_FT",
+      "nation": "china",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "8001": {
+      "name": "Lorraine 40 t",
+      "game_code": "france-F19_Lorraine40t",
+      "nation": "france",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8017": {
+      "name": "Valentine AT",
+      "game_code": "uk-GB42_Valentine_AT",
+      "nation": "uk",
+      "tier": 3,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "8033": {
+      "name": "Type 5 Heavy",
+      "game_code": "japan-J20_Type_2605",
+      "nation": "japan",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8049": {
+      "name": "Шип",
+      "game_code": "other-Oth26_StrvM42HW",
+      "nation": "other",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8065": {
+      "name": "40TP Habicha",
+      "game_code": "european-Pl10_40TP_Habicha",
+      "nation": "european",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8193": {
+      "name": "Объект 704",
+      "game_code": "ussr-Object_704",
+      "nation": "ussr",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "8209": {
+      "name": "Pz.Kpfw. 38 (t) n.A.",
+      "game_code": "germany-Pz38_NA",
+      "nation": "germany",
+      "tier": 4,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8225": {
+      "name": "T28",
+      "game_code": "usa-T28",
+      "nation": "usa",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "8241": {
+      "name": "WZ-111G FT",
+      "game_code": "china-Ch37_WZ-111G_FT",
+      "nation": "china",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "8257": {
+      "name": "Renault UE 57",
+      "game_code": "france-RenaultUE57",
+      "nation": "france",
+      "tier": 3,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "8273": {
+      "name": "Universal Carrier 2-pdr",
+      "game_code": "uk-GB39_Universal_CarrierQF2",
+      "nation": "uk",
+      "tier": 2,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "8289": {
+      "name": "Type 95 Ji-Ro",
+      "game_code": "japan-J38_Type_95_Ji_Ro",
+      "nation": "japan",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "8305": {
+      "name": "Titan H-Nd",
+      "game_code": "other-Oth28_Sturmfeur_HW",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8321": {
+      "name": "45TP Habicha",
+      "game_code": "european-Pl11_45TP_Habicha",
+      "nation": "european",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8465": {
+      "name": "Panther II",
+      "game_code": "germany-Panther_II",
+      "nation": "germany",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8497": {
+      "name": "WZ-111 model 5A",
+      "game_code": "china-Ch41_WZ_111_5A",
+      "nation": "china",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8513": {
+      "name": "AMX 30 B",
+      "game_code": "france-F72_AMX_30",
+      "nation": "france",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8529": {
+      "name": "AT 15",
+      "game_code": "uk-GB72_AT15",
+      "nation": "uk",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "8561": {
+      "name": "Titan T24 57",
+      "game_code": "other-Oth27_M24_AMX",
+      "nation": "other",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8577": {
+      "name": "Lansen C",
+      "game_code": "european-S26_Lancen_C",
+      "nation": "european",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8737": {
+      "name": "T95",
+      "game_code": "usa-T95",
+      "nation": "usa",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "8753": {
+      "name": "M41D",
+      "game_code": "china-Ch42_M41D",
+      "nation": "china",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8785": {
+      "name": "AT 2",
+      "game_code": "uk-GB73_AT2",
+      "nation": "uk",
+      "tier": 5,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "8801": {
+      "name": "O-I Experimental",
+      "game_code": "japan-J23_Mi_To",
+      "nation": "japan",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8817": {
+      "name": "Titan Mk. I",
+      "game_code": "other-Oth29_A15HW",
+      "nation": "other",
+      "tier": 5,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8833": {
+      "name": "Spark",
+      "game_code": "european-Cz08_T-25BP",
+      "nation": "european",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8961": {
+      "name": "КВ-13",
+      "game_code": "ussr-KV-13",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "8993": {
+      "name": "M46 Patton",
+      "game_code": "usa-M46_Patton",
+      "nation": "usa",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9009": {
+      "name": "Бык",
+      "game_code": "china-Type_58BP",
+      "nation": "china",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9041": {
+      "name": "Alecto",
+      "game_code": "uk-GB57_Alecto",
+      "nation": "uk",
+      "tier": 4,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "9057": {
+      "name": "Type 5 Heavy Zetsu",
+      "game_code": "japan-J39_Type_5_Exp",
+      "nation": "japan",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9073": {
+      "name": "Titan-54d",
+      "game_code": "other-Oth30_T54MS",
+      "nation": "other",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9089": {
+      "name": "Škoda T 56",
+      "game_code": "european-Cz14_Skoda_T-56",
+      "nation": "european",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9217": {
+      "name": "ИС-6",
+      "game_code": "ussr-Object252",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9249": {
+      "name": "T25 AT",
+      "game_code": "usa-T25_AT",
+      "nation": "usa",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "9265": {
+      "name": "Type 58",
+      "game_code": "china-Type_58TU",
+      "nation": "china",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9297": {
+      "name": "FV215b (183)",
+      "game_code": "uk-GB48_FV215b_183",
+      "nation": "uk",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "9313": {
+      "name": "Type 4 Heavy",
+      "game_code": "japan-J40_Type_4",
+      "nation": "japan",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9329": {
+      "name": "Titan-150",
+      "game_code": "other-Oth31_T150BP",
+      "nation": "other",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9345": {
+      "name": "Свей",
+      "game_code": "european-S13_Leo_NY",
+      "nation": "european",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9489": {
+      "name": "E 100",
+      "game_code": "germany-E-100",
+      "nation": "germany",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9505": {
+      "name": "M103",
+      "game_code": "usa-M103",
+      "nation": "usa",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9521": {
+      "name": "WZ-122 TM",
+      "game_code": "china-Ch43_WZ-122_2",
+      "nation": "china",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9553": {
+      "name": "AT 8",
+      "game_code": "uk-GB74_AT8",
+      "nation": "uk",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "9569": {
+      "name": "O-Ni",
+      "game_code": "japan-J28_O_I_100",
+      "nation": "japan",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9601": {
+      "name": "CS-52 LIS",
+      "game_code": "european-Pl119_CS_52_LIS",
+      "nation": "european",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9745": {
+      "name": "E 75",
+      "game_code": "germany-E-75",
+      "nation": "germany",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9761": {
+      "name": "M24 Chaffee",
+      "game_code": "usa-M24_Chaffee",
+      "nation": "usa",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9777": {
+      "name": "WZ-114",
+      "game_code": "china-Ch45_WZ_114",
+      "nation": "china",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9793": {
+      "name": "Somua SAu 40",
+      "game_code": "france-Somua_Sau_40",
+      "nation": "france",
+      "tier": 4,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "9809": {
+      "name": "Churchill Gun Carrier",
+      "game_code": "uk-GB40_Gun_Carrier_Churchill",
+      "nation": "uk",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "9825": {
+      "name": "O-Ho",
+      "game_code": "japan-J41_O_I_120",
+      "nation": "japan",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9841": {
+      "name": "Rover",
+      "game_code": "other-Oth33_Blizzard_BP",
+      "nation": "other",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9857": {
+      "name": "Škoda T 45",
+      "game_code": "european-Cz15_Skoda_T-45",
+      "nation": "european",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "9985": {
+      "name": "СУ-101",
+      "game_code": "ussr-SU-101",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "10001": {
+      "name": "VK 28.01",
+      "game_code": "germany-VK2801",
+      "nation": "germany",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10017": {
+      "name": "M4A3E2 Sherman Jumbo",
+      "game_code": "usa-Sherman_Jumbo",
+      "nation": "usa",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10033": {
+      "name": "WZ-132A",
+      "game_code": "china-Ch28_WZ_132A",
+      "nation": "china",
+      "tier": 9,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10049": {
+      "name": "S35 CA",
+      "game_code": "france-S_35CA",
+      "nation": "france",
+      "tier": 5,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "10065": {
+      "name": "AT 7",
+      "game_code": "uk-GB75_AT7",
+      "nation": "uk",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "10081": {
+      "name": "O-I",
+      "game_code": "japan-J24_Mi_To_130_tons",
+      "nation": "japan",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10097": {
+      "name": "Меджай",
+      "game_code": "other-Oth35_PanzerMejai",
+      "nation": "other",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10113": {
+      "name": "Carro da Combattimento 45t",
+      "game_code": "european-It20_Car_Comb_45t",
+      "nation": "european",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10241": {
+      "name": "СУ-100М1",
+      "game_code": "ussr-SU100M1",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "10257": {
+      "name": "E 50",
+      "game_code": "germany-E-50",
+      "nation": "germany",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10273": {
+      "name": "M8A1",
+      "game_code": "usa-M8A1",
+      "nation": "usa",
+      "tier": 4,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "10289": {
+      "name": "WZ-132-1",
+      "game_code": "china-Ch29_Type_62C_prot",
+      "nation": "china",
+      "tier": 10,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10337": {
+      "name": "Kame",
+      "game_code": "japan-J49_Kame",
+      "nation": "japan",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10353": {
+      "name": "Фараон",
+      "game_code": "other-Oth34_PanzerMummy",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10369": {
+      "name": "Controcarro 3 Minotauro",
+      "game_code": "european-It21_Controcarro3_Minotauro",
+      "nation": "european",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "10497": {
+      "name": "КВ-2",
+      "game_code": "ussr-KV2",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10513": {
+      "name": "VK 45.02 (P) Ausf. A",
+      "game_code": "germany-VK4502A",
+      "nation": "germany",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10529": {
+      "name": "T67",
+      "game_code": "usa-T49",
+      "nation": "usa",
+      "tier": 5,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "10545": {
+      "name": "Ветер",
+      "game_code": "china-Ch15_59_16_BP",
+      "nation": "china",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10609": {
+      "name": "Magnate",
+      "game_code": "other-Oth36_Indien_Panzer_S1",
+      "nation": "other",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10625": {
+      "name": "Controcarro 1 Mk. 2",
+      "game_code": "european-It19_Controcarro_1MK2_Ciclope",
+      "nation": "european",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "10753": {
+      "name": "СТ-I",
+      "game_code": "ussr-ST_I",
+      "nation": "ussr",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10769": {
+      "name": "Tiger (P)",
+      "game_code": "germany-PzVI_Tiger_P",
+      "nation": "germany",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10785": {
+      "name": "T110E5",
+      "game_code": "usa-T110",
+      "nation": "usa",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10801": {
+      "name": "Паньлун",
+      "game_code": "china-Ch34_WZ-131G_FT_BP",
+      "nation": "china",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "10817": {
+      "name": "AMX AC mle. 46",
+      "game_code": "france-AMX_AC_Mle1946",
+      "nation": "france",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "10865": {
+      "name": "Fixer",
+      "game_code": "other-Oth37_T26_E4_SuperPershing_S1",
+      "nation": "other",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "10881": {
+      "name": "Semovente Controcarro mod. 1964",
+      "game_code": "european-It18_Semovente_mod_64",
+      "nation": "european",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "11009": {
+      "name": "КВ-4",
+      "game_code": "ussr-KV4",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11025": {
+      "name": "Sturer Emil",
+      "game_code": "germany-Sturer_Emil",
+      "nation": "germany",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "11041": {
+      "name": "T25/2",
+      "game_code": "usa-T25_2",
+      "nation": "usa",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "11057": {
+      "name": "114 SP2",
+      "game_code": "china-Ch44_114_SP2",
+      "nation": "china",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11073": {
+      "name": "AMX 50 Foch",
+      "game_code": "france-AMX50_Foch",
+      "nation": "france",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "11121": {
+      "name": "Regressor",
+      "game_code": "other-Oth38_50TP_Tyszkiewicza_S1",
+      "nation": "other",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11137": {
+      "name": "Semovente Controcarro mod. 1956",
+      "game_code": "european-It17_Semovente_mod_56",
+      "nation": "european",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "11265": {
+      "name": "Т-150",
+      "game_code": "ussr-T150",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11281": {
+      "name": "Kampfpanzer 70",
+      "game_code": "germany-G_KpfPz_70",
+      "nation": "germany",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11297": {
+      "name": "T28 Prototype",
+      "game_code": "usa-T28_Prototype",
+      "nation": "usa",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "11313": {
+      "name": "Type 58 50-08",
+      "game_code": "china-Type_58TUR",
+      "nation": "china",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11377": {
+      "name": "Basilisk",
+      "game_code": "other-Oth39_T20_S2",
+      "nation": "other",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11393": {
+      "name": "Semovente M43 Bassotto",
+      "game_code": "european-It16_Bassoto",
+      "nation": "european",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "11521": {
+      "name": "ИС-8",
+      "game_code": "ussr-IS8",
+      "nation": "ussr",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11537": {
+      "name": "Jagdpanther II",
+      "game_code": "germany-JagdPantherII",
+      "nation": "germany",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "11553": {
+      "name": "M18 Hellcat",
+      "game_code": "usa-M18_Hellcat",
+      "nation": "usa",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "11569": {
+      "name": "BZ-58-2",
+      "game_code": "china-Ch59_BZ58_2",
+      "nation": "china",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11585": {
+      "name": "ARL V39",
+      "game_code": "france-ARL_V39",
+      "nation": "france",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "11633": {
+      "name": "Лесная ведьма",
+      "game_code": "other-Oth42_ForestWitch_HW23",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11649": {
+      "name": "Semovente M41",
+      "game_code": "european-It15_Semovente_M41",
+      "nation": "european",
+      "tier": 5,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "11777": {
+      "name": "КВ-1",
+      "game_code": "ussr-KV1",
+      "nation": "ussr",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11793": {
+      "name": "Nashorn",
+      "game_code": "germany-Nashorn",
+      "nation": "germany",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "11809": {
+      "name": "T23E3",
+      "game_code": "usa-T23E3",
+      "nation": "usa",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11825": {
+      "name": "BZ-75",
+      "game_code": "china-Ch48_BZ_75",
+      "nation": "china",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11889": {
+      "name": "Nebulon",
+      "game_code": "other-Oth40_TVP_46_S2",
+      "nation": "other",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "11905": {
+      "name": "Мракоборец",
+      "game_code": "european-It10_P43_bis_BP",
+      "nation": "european",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12033": {
+      "name": "СУ-122-54",
+      "game_code": "ussr-SU122_54",
+      "nation": "ussr",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "12049": {
+      "name": "Jagdpanzer E 100",
+      "game_code": "germany-JagdPz_E100",
+      "nation": "germany",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "12065": {
+      "name": "T95E2",
+      "game_code": "usa-T95E2",
+      "nation": "usa",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12081": {
+      "name": "BZ-68",
+      "game_code": "china-Ch49_BZ_68",
+      "nation": "china",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12097": {
+      "name": "AMX AC mle. 48",
+      "game_code": "france-AMX_AC_Mle1948",
+      "nation": "france",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "12145": {
+      "name": "Glacier",
+      "game_code": "other-Oth41_Centurion_Mk3_S2",
+      "nation": "other",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12161": {
+      "name": "Strv K",
+      "game_code": "european-S31_Strv_K",
+      "nation": "european",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12305": {
+      "name": "E 50 Ausf. M",
+      "game_code": "germany-E50_Ausf_M",
+      "nation": "germany",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12321": {
+      "name": "T6E1 Grizzly",
+      "game_code": "usa-A77_T6M",
+      "nation": "usa",
+      "tier": 4,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12337": {
+      "name": "BZ-58",
+      "game_code": "china-Ch51_BZ_58",
+      "nation": "china",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12417": {
+      "name": "Bisonte C45",
+      "game_code": "european-It22_Progetto_C45_mod_71",
+      "nation": "european",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12545": {
+      "name": "К-91",
+      "game_code": "ussr-K-91",
+      "nation": "ussr",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12593": {
+      "name": "BZ-166",
+      "game_code": "china-Ch50_BZ_166",
+      "nation": "china",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12657": {
+      "name": "Titan Charioteer",
+      "game_code": "other-Oth44_Charioteer_T",
+      "nation": "other",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "12673": {
+      "name": "Bofors Tornvagn",
+      "game_code": "european-S32_Bofors_Tornvagn",
+      "nation": "european",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12849": {
+      "name": "116-F3",
+      "game_code": "china-Ch52_WZ_122_6_F3",
+      "nation": "china",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12913": {
+      "name": "Groundtank",
+      "game_code": "other-Oth45_Sandstriker",
+      "nation": "other",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "12929": {
+      "name": "TNH T Vz. 51",
+      "game_code": "european-Cz16_TNH_T_vz51",
+      "nation": "european",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13073": {
+      "name": "Pz.Kpfw. II Ausf. G",
+      "game_code": "germany-Pz_II_AusfG",
+      "nation": "germany",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13089": {
+      "name": "T110E4",
+      "game_code": "usa-T110E4",
+      "nation": "usa",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "13105": {
+      "name": "BZ-176",
+      "game_code": "china-Ch47_BZ_176",
+      "nation": "china",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13169": {
+      "name": "AC-04 Wedge",
+      "game_code": "other-Oth61_Pz_VM_Set",
+      "nation": "other",
+      "tier": 4,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13185": {
+      "name": "Vz. 55",
+      "game_code": "european-Cz17_Vz_55",
+      "nation": "european",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13329": {
+      "name": "Durchbruchswagen 2",
+      "game_code": "germany-DW_II",
+      "nation": "germany",
+      "tier": 4,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13345": {
+      "name": "T26E4 SuperPershing",
+      "game_code": "usa-T26_E4_SuperPershing",
+      "nation": "usa",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13425": {
+      "name": "AC-05 Highlander",
+      "game_code": "other-Oth62_Pz_VlD_Set",
+      "nation": "other",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13441": {
+      "name": "Aeonix",
+      "game_code": "european-Cz08_T-25BPS",
+      "nation": "european",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13569": {
+      "name": "Объект 268",
+      "game_code": "ussr-Object268",
+      "nation": "ussr",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "13617": {
+      "name": "Type 59 spc",
+      "game_code": "china-Ch60_Type59_spc",
+      "nation": "china",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13681": {
+      "name": "AC-06 Ocelote",
+      "game_code": "other-Oth63_Pz_VllF_Set",
+      "nation": "other",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13697": {
+      "name": "TNH 105/1000",
+      "game_code": "european-Cz18_TNH_105_1000",
+      "nation": "european",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13825": {
+      "name": "Т-62А",
+      "game_code": "ussr-T62A",
+      "nation": "ussr",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13841": {
+      "name": "Indien-Panzer",
+      "game_code": "germany-Indien_Panzer",
+      "nation": "germany",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13857": {
+      "name": "T110E3",
+      "game_code": "usa-T110E3",
+      "nation": "usa",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "13873": {
+      "name": "BZ-74-1",
+      "game_code": "china-Ch56_BZ_74_1",
+      "nation": "china",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13889": {
+      "name": "AMX 50 Foch (155)",
+      "game_code": "france-AMX_50Fosh_155",
+      "nation": "france",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "13937": {
+      "name": "AC-07 Rebelde",
+      "game_code": "other-Oth64_Pz_VlllK_Set",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "13953": {
+      "name": "Vz. 44-1",
+      "game_code": "european-Cz19_Vz_44_1",
+      "nation": "european",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14097": {
+      "name": "VK 30.01 (D)",
+      "game_code": "germany-VK3002DB_V1",
+      "nation": "germany",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14113": {
+      "name": "M48 Patton",
+      "game_code": "usa-M48A1",
+      "nation": "usa",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14129": {
+      "name": "BZT-70",
+      "game_code": "china-Ch57_BZT_70",
+      "nation": "china",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14145": {
+      "name": "AMX ELC bis",
+      "game_code": "france-ELC_AMX",
+      "nation": "france",
+      "tier": 5,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14193": {
+      "name": "Silencer",
+      "game_code": "other-Oth46_Charioteer_S3",
+      "nation": "other",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "14209": {
+      "name": "Škoda P-JS",
+      "game_code": "european-Cz29_Skoda_P-JS",
+      "nation": "european",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14337": {
+      "name": "Объект 263",
+      "game_code": "ussr-Object263",
+      "nation": "ussr",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "14385": {
+      "name": "WZ-120G FT",
+      "game_code": "china-Ch40_WZ120G_FT",
+      "nation": "china",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "14449": {
+      "name": "Swindler",
+      "game_code": "other-Oth47_AMX_13_90_S3",
+      "nation": "other",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14465": {
+      "name": "DS PZInż",
+      "game_code": "european-Pl17_DS_PZlnz",
+      "nation": "european",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14609": {
+      "name": "Leopard 1",
+      "game_code": "germany-Leopard1",
+      "nation": "germany",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14625": {
+      "name": "T69",
+      "game_code": "usa-T69",
+      "nation": "usa",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14705": {
+      "name": "Fänrik",
+      "game_code": "other-Oth48_EMIL_1951E1_S3",
+      "nation": "other",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14721": {
+      "name": "Strv 81",
+      "game_code": "european-S23_Strv_81",
+      "nation": "european",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14865": {
+      "name": "Leopard Prototyp A",
+      "game_code": "germany-Pro_Ag_A",
+      "nation": "germany",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14881": {
+      "name": "T57 Heavy Tank",
+      "game_code": "usa-T57_58",
+      "nation": "usa",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14961": {
+      "name": "Mutant",
+      "game_code": "other-Oth49_TM_04_NT",
+      "nation": "other",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "14977": {
+      "name": "CS-63",
+      "game_code": "european-Pl21_CS_63",
+      "nation": "european",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15137": {
+      "name": "T21",
+      "game_code": "usa-T21",
+      "nation": "usa",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15217": {
+      "name": "AC-06V Forger",
+      "game_code": "other-Oth65_PzVIllM_Tigeom",
+      "nation": "other",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15233": {
+      "name": "CS-59",
+      "game_code": "european-Pl22_CS_59",
+      "nation": "european",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15393": {
+      "name": "T54E1",
+      "game_code": "usa-T54E1",
+      "nation": "usa",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15409": {
+      "name": "ZQ-90",
+      "game_code": "china-Ch66_121_2_Ziqiang",
+      "nation": "china",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": true,
+      "deprecated": false
+    },
+    "15441": {
+      "name": "Chieftain/T95",
+      "game_code": "uk-GB87_Chieftain_T95_turret",
+      "nation": "uk",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15473": {
+      "name": "Endurance",
+      "game_code": "other-Oth50_STT",
+      "nation": "other",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15489": {
+      "name": "CS-53",
+      "game_code": "european-Pl23_CS_53",
+      "nation": "european",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15617": {
+      "name": "Объект 907",
+      "game_code": "ussr-Object_907",
+      "nation": "ussr",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15649": {
+      "name": "T71",
+      "game_code": "usa-T71",
+      "nation": "usa",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15697": {
+      "name": "Chieftain Mk. 6",
+      "game_code": "uk-GB84_Chieftain_Mk6",
+      "nation": "uk",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15729": {
+      "name": "TSL-7 Defender",
+      "game_code": "other-Oth51_FD_24",
+      "nation": "other",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15745": {
+      "name": "CS-44",
+      "game_code": "european-Pl20_CS_44",
+      "nation": "european",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15889": {
+      "name": "VK 30.02 (M)",
+      "game_code": "germany-VK3002M",
+      "nation": "germany",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15905": {
+      "name": "M60",
+      "game_code": "usa-M60",
+      "nation": "usa",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15937": {
+      "name": "Renault R35",
+      "game_code": "france-RenaultR35",
+      "nation": "france",
+      "tier": 1,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15953": {
+      "name": "FV201 (A45)",
+      "game_code": "uk-GB52_FV201_A45",
+      "nation": "uk",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "15985": {
+      "name": "Toxique",
+      "game_code": "other-Oth52_Toxique",
+      "nation": "other",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "16001": {
+      "name": "B.U.G.I.",
+      "game_code": "european-Pl18_BUGI",
+      "nation": "european",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "16145": {
+      "name": "Pz.Sfl. IVc",
+      "game_code": "germany-Pz_Sfl_IVc",
+      "nation": "germany",
+      "tier": 5,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "16193": {
+      "name": "M4A1 Revalorisé",
+      "game_code": "france-F73_M4A1_Revalorise",
+      "nation": "france",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "16241": {
+      "name": "Костолом",
+      "game_code": "other-Oth53_Rammer",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "16257": {
+      "name": "Outcast",
+      "game_code": "european-Cz29_Skoda_P-JS_BP",
+      "nation": "european",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "16401": {
+      "name": "Waffenträger auf Pz. IV",
+      "game_code": "germany-Waffentrager_IV",
+      "nation": "germany",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "16449": {
+      "name": "AMX 13 57",
+      "game_code": "france-F69_AMX_13_57GF",
+      "nation": "france",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "16497": {
+      "name": "E-10",
+      "game_code": "other-Oth66_E100ANN_S4",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "16513": {
+      "name": "ShPTK-TVP 100",
+      "game_code": "european-Cz20_ShPTK_TVP_100",
+      "nation": "european",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "16641": {
+      "name": "МТ-25",
+      "game_code": "ussr-MT25",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "16657": {
+      "name": "Rhm.-Borsig Waffenträger",
+      "game_code": "germany-RhB_Waffentrager",
+      "nation": "germany",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "16673": {
+      "name": "T37",
+      "game_code": "usa-A94_T37",
+      "nation": "usa",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "16705": {
+      "name": "AMX M4 mle. 49",
+      "game_code": "france-F74_AMX_M4_1949",
+      "nation": "france",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "16753": {
+      "name": "DTH-STR",
+      "game_code": "other-Oth67_FV215b_183ANN_S4",
+      "nation": "other",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "16769": {
+      "name": "SMV CC-64 Vipera",
+      "game_code": "european-It30_CC_mod_64_Prem",
+      "nation": "european",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "16897": {
+      "name": "Объект 140",
+      "game_code": "ussr-Object_140",
+      "nation": "ussr",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17009": {
+      "name": "KV-JR",
+      "game_code": "other-Oth68_KV2ANN_S4",
+      "nation": "other",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17025": {
+      "name": "Progetto CC55 mod. 54",
+      "game_code": "european-It117_ProgettoCC55mod54",
+      "nation": "european",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17169": {
+      "name": "Pz.Kpfw. IV Ausf. A",
+      "game_code": "germany-Pz_IV_AusfA",
+      "nation": "germany",
+      "tier": 3,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17217": {
+      "name": "Стиратель BP44",
+      "game_code": "france-ARL_44BP",
+      "nation": "france",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17233": {
+      "name": "FV4004 Conway",
+      "game_code": "uk-GB81_FV4004",
+      "nation": "uk",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "17265": {
+      "name": "Жнец",
+      "game_code": "other-Oth69_Souleater",
+      "nation": "other",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "17281": {
+      "name": "Progetto C50 mod. 66",
+      "game_code": "european-It119_ProgettoC50mod66",
+      "nation": "european",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17425": {
+      "name": "Pz.Kpfw. IV Ausf. D",
+      "game_code": "germany-Pz_IV_AusfD",
+      "nation": "germany",
+      "tier": 4,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17473": {
+      "name": "AMX Defender",
+      "game_code": "france-F69_AMX_13D",
+      "nation": "france",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17489": {
+      "name": "Charioteer",
+      "game_code": "uk-GB80_Charioteer",
+      "nation": "uk",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "17521": {
+      "name": "Светоносец",
+      "game_code": "other-Oth70_Lightbringer",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17537": {
+      "name": "Carro d'assalto P.88",
+      "game_code": "european-It116_Carro_d_assalto_P88",
+      "nation": "european",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17729": {
+      "name": "Somua SM",
+      "game_code": "france-F84_Somua_SM",
+      "nation": "france",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17745": {
+      "name": "FV217 Badger",
+      "game_code": "uk-GB92_FV217",
+      "nation": "uk",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "17777": {
+      "name": "Titan Strife",
+      "game_code": "other-Oth71_Titan_Strife",
+      "nation": "other",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17793": {
+      "name": "Rinoceronte",
+      "game_code": "european-It115_Rinoceronte",
+      "nation": "european",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17953": {
+      "name": "M41 Walker Bulldog",
+      "game_code": "usa-M41_Bulldog",
+      "nation": "usa",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "17985": {
+      "name": "Bretagne Panther",
+      "game_code": "france-F113_PzV_FR",
+      "nation": "france",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18001": {
+      "name": "FV4005",
+      "game_code": "uk-GB83_4005",
+      "nation": "uk",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "18033": {
+      "name": "Hazard I",
+      "game_code": "other-Oth72_Hazard_I",
+      "nation": "other",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18049": {
+      "name": "Lion",
+      "game_code": "european-It21_Lion",
+      "nation": "european",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18177": {
+      "name": "Т-54 облегчённый",
+      "game_code": "ussr-R109_T54S",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18209": {
+      "name": "T49",
+      "game_code": "usa-A100_T49",
+      "nation": "usa",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18241": {
+      "name": "Bat.-Châtillon Bourrasque",
+      "game_code": "france-F116_Bat_Chat_Bourrasque",
+      "nation": "france",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18257": {
+      "name": "Challenger",
+      "game_code": "uk-GB41_Challenger",
+      "nation": "uk",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "18289": {
+      "name": "Quetzal",
+      "game_code": "other-Oth73_Nemini",
+      "nation": "other",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18305": {
+      "name": "SDP 40 Zadymka",
+      "game_code": "european-Pl33_SDP_Wz_40",
+      "nation": "european",
+      "tier": 5,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "18433": {
+      "name": "ЛТТБ",
+      "game_code": "ussr-R107_LTB",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18449": {
+      "name": "Spähpanzer Ru 251",
+      "game_code": "germany-G103_RU_251",
+      "nation": "germany",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18497": {
+      "name": "Lorraine 40 t Бесстрашный",
+      "game_code": "france-F19_Lorraine40t_Com",
+      "nation": "france",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18513": {
+      "name": "Chimera",
+      "game_code": "uk-GB97_Chimera",
+      "nation": "uk",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18545": {
+      "name": "Argonaut",
+      "game_code": "other-Oth74_Argonaut",
+      "nation": "other",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "18561": {
+      "name": "SDP 44 Burza",
+      "game_code": "european-Pl32_SDP_Wz_44",
+      "nation": "european",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "18689": {
+      "name": "Т-70/57",
+      "game_code": "ussr-R43_T-70_57",
+      "nation": "ussr",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18753": {
+      "name": "AMX Canon d'assaut 105",
+      "game_code": "france-F89_Canon_dassaut_105",
+      "nation": "france",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "18769": {
+      "name": "Caernarvon Action X",
+      "game_code": "uk-GB93_Caernarvon_AX",
+      "nation": "uk",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18801": {
+      "name": "mau5Tank",
+      "game_code": "other-Oth75_Braniaq_DM5",
+      "nation": "other",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18817": {
+      "name": "SDP 57 Gowika",
+      "game_code": "european-Pl31_SDP_Wz_57D",
+      "nation": "european",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "18945": {
+      "name": "ИСУ-130",
+      "game_code": "ussr-R111_ISU130",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "18961": {
+      "name": "Spähpanzer SP I C",
+      "game_code": "germany-G113_SP_I_C",
+      "nation": "germany",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "18977": {
+      "name": "T95E6",
+      "game_code": "usa-A95_T95E6",
+      "nation": "usa",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19009": {
+      "name": "AMXmas",
+      "game_code": "france-F_AMX-12BP",
+      "nation": "france",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19025": {
+      "name": "Defender Mk. 1",
+      "game_code": "uk-GB_Centurion_MkDF",
+      "nation": "uk",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19057": {
+      "name": "Destiny",
+      "game_code": "other-Oth76_Destiny",
+      "nation": "other",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19073": {
+      "name": "SDP 58 Kilana",
+      "game_code": "european-Pl30_SDP_Wz58T",
+      "nation": "european",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "19217": {
+      "name": "Grille 15",
+      "game_code": "germany-G121_Grille_15_L63",
+      "nation": "germany",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "19233": {
+      "name": "Chrysler K",
+      "game_code": "usa-A115_Chrysler_K",
+      "nation": "usa",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19265": {
+      "name": "Шарль",
+      "game_code": "france-Achilles_FR",
+      "nation": "france",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "19281": {
+      "name": "Super Conqueror",
+      "game_code": "uk-GB91_Super_Conqueror",
+      "nation": "uk",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19313": {
+      "name": "Prowler",
+      "game_code": "other-Oth77_Prowler",
+      "nation": "other",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19329": {
+      "name": "SDP 60 Gonkiewicza",
+      "game_code": "european-Pl28_SDP_Wz_60",
+      "nation": "european",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "19473": {
+      "name": "Krupp-38(D)",
+      "game_code": "germany-Krupp-38D",
+      "nation": "germany",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19489": {
+      "name": "T28 Defender",
+      "game_code": "usa-A68_T28D",
+      "nation": "usa",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "19521": {
+      "name": "Bat.-Châtillon 25 t Avenir",
+      "game_code": "france-Bat-Chat-25CL",
+      "nation": "france",
+      "tier": 9,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19537": {
+      "name": "Vickers Light 105",
+      "game_code": "uk-GB_Vickers_Light_105",
+      "nation": "uk",
+      "tier": 10,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19569": {
+      "name": "AC-09V Sterope",
+      "game_code": "other-Oth78_AC_17_P_Sterope",
+      "nation": "other",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19585": {
+      "name": "NC 70 Błyskawica",
+      "game_code": "european-Pl29_NC_Wz_70T",
+      "nation": "european",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "19713": {
+      "name": "М4-А2 Шерман Лозы",
+      "game_code": "ussr-R140_M4A2_Loza",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19729": {
+      "name": "Tiger 131",
+      "game_code": "germany-G136_Tiger_131",
+      "nation": "germany",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19745": {
+      "name": "T26E5",
+      "game_code": "usa-A117_T26E5",
+      "nation": "usa",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19777": {
+      "name": "AltProto AMX 30",
+      "game_code": "france-F117_Alt_Proto_AMX_30",
+      "nation": "france",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19793": {
+      "name": "Vickers Cruiser",
+      "game_code": "uk-GB_Vickers_Cruiser",
+      "nation": "uk",
+      "tier": 9,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19825": {
+      "name": "AC-10 Atlas",
+      "game_code": "other-Oth79_AC_17_Alcyone",
+      "nation": "other",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19841": {
+      "name": "SDP wz 66 Grom",
+      "game_code": "european-Pl27_SDP_Wz_66T",
+      "nation": "european",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "19969": {
+      "name": "Т-22 ср.",
+      "game_code": "ussr-R120_T22SR",
+      "nation": "ussr",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "19985": {
+      "name": "Rheinmetall Skorpion G",
+      "game_code": "germany-G114_Rheinmetall_Scorpion",
+      "nation": "germany",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "20001": {
+      "name": "T92E1",
+      "game_code": "usa-A99_T92E1",
+      "nation": "usa",
+      "tier": 9,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20033": {
+      "name": "Char Futur 4",
+      "game_code": "france-F114_Projet_4_1",
+      "nation": "france",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20049": {
+      "name": "FV301",
+      "game_code": "uk-GB_FV301",
+      "nation": "uk",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20081": {
+      "name": "AC-09 Celeno",
+      "game_code": "other-Oth80_AC_16_Celeno",
+      "nation": "other",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20097": {
+      "name": "Felice",
+      "game_code": "european-It35_Felice",
+      "nation": "european",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20257": {
+      "name": "XM551 Sheridan",
+      "game_code": "usa-A116_XM551",
+      "nation": "usa",
+      "tier": 10,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20289": {
+      "name": "Пират",
+      "game_code": "france-F34_ARL_V39_BP",
+      "nation": "france",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "20305": {
+      "name": "Centurion Mk. 5/1 RAAC",
+      "game_code": "uk-GB94_Centurion_Mk5-1_RAAC",
+      "nation": "uk",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20337": {
+      "name": "AC-08 Taygete",
+      "game_code": "other-Oth81_AC_15_Taygete",
+      "nation": "other",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20481": {
+      "name": "Объект 252У",
+      "game_code": "ussr-R134_Object_252U",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20497": {
+      "name": "VK 100.01 (P)",
+      "game_code": "germany-G115_VK10001P",
+      "nation": "germany",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20513": {
+      "name": "T54E2",
+      "game_code": "usa-A124_T54E2",
+      "nation": "usa",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20545": {
+      "name": "Renault G1",
+      "game_code": "france-F11_Renault_G1R",
+      "nation": "france",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20561": {
+      "name": "Turtle Mk. I",
+      "game_code": "uk-GB99_Turtle_Mk1",
+      "nation": "uk",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "20593": {
+      "name": "AC-08V Pleione",
+      "game_code": "other-Oth82_AC_14_Pleione",
+      "nation": "other",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20737": {
+      "name": "СУ-130ПМ",
+      "game_code": "ussr-R159_SU_130PM",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "20753": {
+      "name": "Mäuschen",
+      "game_code": "germany-G110_Mauschen",
+      "nation": "germany",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20769": {
+      "name": "T25 Pilot Number 1",
+      "game_code": "usa-A111_T25_Pilot",
+      "nation": "usa",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20801": {
+      "name": "Lorraine 50 t",
+      "game_code": "france-F115_Lorraine_50t",
+      "nation": "france",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20817": {
+      "name": "Эксплорер",
+      "game_code": "uk-GB21_A27BP",
+      "nation": "uk",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20849": {
+      "name": "FVE Defender",
+      "game_code": "other-Oth84_FVE_Defender",
+      "nation": "other",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "20993": {
+      "name": "Т-2020",
+      "game_code": "ussr-R63_ST_IBD",
+      "nation": "ussr",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21009": {
+      "name": "Panzer 58",
+      "game_code": "germany-G119_Pz58_Mutz",
+      "nation": "germany",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21025": {
+      "name": "T26E3 Eagle 7",
+      "game_code": "usa-A121_T26E3",
+      "nation": "usa",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21057": {
+      "name": "Projet Murat",
+      "game_code": "france-F119_Projet_Murat",
+      "nation": "france",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21073": {
+      "name": "Дредноут",
+      "game_code": "uk-GB40_Gun_Carrier_BP",
+      "nation": "uk",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "21105": {
+      "name": "AC-07V Merope",
+      "game_code": "other-Oth83_AC_13_Merope",
+      "nation": "other",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21249": {
+      "name": "Гром",
+      "game_code": "ussr-KV-1s-BP",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21265": {
+      "name": "VK 168.01 (P)",
+      "game_code": "germany-G138_VK16801P",
+      "nation": "germany",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21281": {
+      "name": "Рудольф",
+      "game_code": "usa-M4A3E8_BP",
+      "nation": "usa",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21313": {
+      "name": "AMX 13 M24",
+      "game_code": "france-F126_AMX_13_M24",
+      "nation": "france",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21329": {
+      "name": "GSOR 1008",
+      "game_code": "uk-GB109_GSOR_1008",
+      "nation": "uk",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "21361": {
+      "name": "Herdbreaker",
+      "game_code": "other-Oth86_Survivalist",
+      "nation": "other",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21505": {
+      "name": "Т-44-85",
+      "game_code": "ussr-R98_T44_85",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21521": {
+      "name": "E 75 TS",
+      "game_code": "germany-G_E-75TS",
+      "nation": "germany",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21537": {
+      "name": "Sherman Easy 8",
+      "game_code": "usa-M4A3E8TU",
+      "nation": "usa",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21569": {
+      "name": "ERAC 105 Proto",
+      "game_code": "france-F123_ERAC_105_Proto",
+      "nation": "france",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21585": {
+      "name": "Blasteroid",
+      "game_code": "uk-GB63_TOG_II_BP",
+      "nation": "uk",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21617": {
+      "name": "Кусака",
+      "game_code": "other-Oth85_Ghoul",
+      "nation": "other",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21761": {
+      "name": "СТГ",
+      "game_code": "ussr-R146_STG",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21777": {
+      "name": "VK 90.01 (P)",
+      "game_code": "germany-G_VK9001P",
+      "nation": "germany",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21793": {
+      "name": "XM551 Sheridan Ракетный",
+      "game_code": "usa-A116_XM551_Exp",
+      "nation": "usa",
+      "tier": 10,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21825": {
+      "name": "Projet Louis",
+      "game_code": "france-F120_Project_Louis",
+      "nation": "france",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21841": {
+      "name": "Caliban",
+      "game_code": "uk-GB112_Caliban",
+      "nation": "uk",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "21889": {
+      "name": "56TP",
+      "game_code": "european-Pl24_56TP",
+      "nation": "european",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22017": {
+      "name": "Т-34-85",
+      "game_code": "ussr-T34_85TU",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22033": {
+      "name": "Диверсант",
+      "game_code": "germany-VK2801_BP",
+      "nation": "germany",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22049": {
+      "name": "Magnus",
+      "game_code": "usa-M6E2BP",
+      "nation": "usa",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22081": {
+      "name": "ELC AMX-901",
+      "game_code": "france-F127_ELC_AMX_901_Proto",
+      "nation": "france",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22097": {
+      "name": "Churchill VIII",
+      "game_code": "uk-GB_Churchill_MkVIII",
+      "nation": "uk",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22129": {
+      "name": "AC-110 Teichos",
+      "game_code": "other-Oth91_AC_U_MT_10",
+      "nation": "other",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": true,
+      "deprecated": false
+    },
+    "22145": {
+      "name": "Bofors Triton",
+      "game_code": "european-S38_Bofors_Triton",
+      "nation": "european",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22273": {
+      "name": "Объект 260",
+      "game_code": "ussr-R110_Object_260",
+      "nation": "ussr",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22289": {
+      "name": "Tiger I",
+      "game_code": "germany-PzVI_AusfTU",
+      "nation": "germany",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22305": {
+      "name": "AE Phase I",
+      "game_code": "usa-A125_AEP_1",
+      "nation": "usa",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22337": {
+      "name": "Sentinelle",
+      "game_code": "france-F140_Sentinelle",
+      "nation": "france",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22353": {
+      "name": "Churchill W",
+      "game_code": "uk-GB09_Churchill_VII_BP",
+      "nation": "uk",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22385": {
+      "name": "Titan JPanther II",
+      "game_code": "other-Oth92_JagdPantherII_Titan",
+      "nation": "other",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "22401": {
+      "name": "Ambassador",
+      "game_code": "european-S37_Ambassador",
+      "nation": "european",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22529": {
+      "name": "ЛТ-432",
+      "game_code": "ussr-R158_LT_432",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22545": {
+      "name": "Kanonenjagdpanzer 105",
+      "game_code": "germany-G112_JagdPanzer_105",
+      "nation": "germany",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "22561": {
+      "name": "TS-5",
+      "game_code": "usa-A122_TS-5",
+      "nation": "usa",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "22609": {
+      "name": "Caernarvon Defender",
+      "game_code": "uk-GB11_Caernarvon_D",
+      "nation": "uk",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22641": {
+      "name": "Конвоир",
+      "game_code": "other-Oth93_Convoyer",
+      "nation": "other",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22657": {
+      "name": "Toro",
+      "game_code": "european-It34_Toro",
+      "nation": "european",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22785": {
+      "name": "Триумфатор",
+      "game_code": "ussr-T34_85BP",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22801": {
+      "name": "Ледокол",
+      "game_code": "germany-PzVI_AusfBP",
+      "nation": "germany",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22817": {
+      "name": "M-VI-Yoh",
+      "game_code": "usa-M-6-Y",
+      "nation": "usa",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22849": {
+      "name": "Brennos",
+      "game_code": "france-F131_Brennos",
+      "nation": "france",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22865": {
+      "name": "Charlemagne",
+      "game_code": "uk-GB111_Charlemagne",
+      "nation": "uk",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "22913": {
+      "name": "Donnola",
+      "game_code": "european-It38_Donnola",
+      "nation": "european",
+      "tier": 9,
+      "type": "lightTank",
+      "test": true,
+      "deprecated": false
+    },
+    "23041": {
+      "name": "Т-34 экранированный",
+      "game_code": "ussr-R154_T-34E-43",
+      "nation": "ussr",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23057": {
+      "name": "Kunze Panzer",
+      "game_code": "germany-G147_mPanzer_64",
+      "nation": "germany",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23073": {
+      "name": "M-V-Yoh",
+      "game_code": "usa-M-5-Y",
+      "nation": "usa",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23105": {
+      "name": "M47 Chevalier",
+      "game_code": "france-F142_M47_Chevalier",
+      "nation": "france",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": true,
+      "deprecated": false
+    },
+    "23121": {
+      "name": "Cobra",
+      "game_code": "uk-GB106_Cobra",
+      "nation": "uk",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23169": {
+      "name": "Husarz",
+      "game_code": "european-Pl120_Wz61_Ussar",
+      "nation": "european",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23297": {
+      "name": "Объект 244",
+      "game_code": "ussr-R160_object_244",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23313": {
+      "name": "Kampfpanzer 50 t",
+      "game_code": "germany-G144_Kpz_50t",
+      "nation": "germany",
+      "tier": 10,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23329": {
+      "name": "M-III-Yoh",
+      "game_code": "usa-M-3-Y",
+      "nation": "usa",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23377": {
+      "name": "FV1066 Senlac",
+      "game_code": "uk-GB101_FV1066_Senlac",
+      "nation": "uk",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23425": {
+      "name": "Zmije",
+      "game_code": "european-Cz44_Zmije",
+      "nation": "european",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": true,
+      "deprecated": false
+    },
+    "23553": {
+      "name": "МС-1",
+      "game_code": "ussr-MS-1obr21",
+      "nation": "ussr",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23569": {
+      "name": "Pz. IV Гаргулья",
+      "game_code": "germany-Pz_IV_AusfBT",
+      "nation": "germany",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23585": {
+      "name": "M-VII-Yoh",
+      "game_code": "usa-M-7-Y",
+      "nation": "usa",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23617": {
+      "name": "Lorraine 120 Alby",
+      "game_code": "france-F134_Lorraine_120_Alby",
+      "nation": "france",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": true,
+      "deprecated": false
+    },
+    "23633": {
+      "name": "A25 Harry Hopkins I",
+      "game_code": "uk-GB116_Harry_Hopkins",
+      "nation": "uk",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23809": {
+      "name": "Объект 84",
+      "game_code": "ussr-R_Object_84",
+      "nation": "ussr",
+      "tier": 9,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "23825": {
+      "name": "Krupp-Steyr Waffenträger",
+      "game_code": "germany-G109_Steyr_WT",
+      "nation": "germany",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "23841": {
+      "name": "Super Hellcat",
+      "game_code": "usa-A130_Super_Hellcat",
+      "nation": "usa",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "23889": {
+      "name": "FV4201 Chieftain Proto",
+      "game_code": "uk-GB110_FV4201_Chieftain_Prototype",
+      "nation": "uk",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24065": {
+      "name": "ЛТГ",
+      "game_code": "ussr-R131_LTG",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24081": {
+      "name": "U-Panzer",
+      "game_code": "germany-VK3002DB_BP",
+      "nation": "germany",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24097": {
+      "name": "BLTZ9000",
+      "game_code": "usa-M18E2BP",
+      "nation": "usa",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24145": {
+      "name": "GSOR 1008 Бесстрашный",
+      "game_code": "uk-GB109_GSOR_1008_Fearless",
+      "nation": "uk",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "24177": {
+      "name": "LEY-1 Defender",
+      "game_code": "other-Oth95_MTU_defender",
+      "nation": "other",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24321": {
+      "name": "Т-100 ЛТ",
+      "game_code": "ussr-R132_T100LT",
+      "nation": "ussr",
+      "tier": 10,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24337": {
+      "name": "M48A2 Räumpanzer",
+      "game_code": "germany-G142_M48RPz",
+      "nation": "germany",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24401": {
+      "name": "Vickers MBT Mk. 3",
+      "game_code": "uk-GB114_Vickers_MBT_Mk3",
+      "nation": "uk",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24433": {
+      "name": "Морбид",
+      "game_code": "other-Oth96_Morbid",
+      "nation": "other",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24577": {
+      "name": "Объект 268 Вариант 4",
+      "game_code": "ussr-R149_Object_268_4",
+      "nation": "ussr",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "24593": {
+      "name": "Keiler",
+      "game_code": "germany-G_E-75RT",
+      "nation": "germany",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24609": {
+      "name": "Concept 1B",
+      "game_code": "usa-A128_Concept_1b",
+      "nation": "usa",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24657": {
+      "name": "A46 Different",
+      "game_code": "uk-GB108_A46",
+      "nation": "uk",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24689": {
+      "name": "星际猎人",
+      "game_code": "other-Oth97_CNO_Consul",
+      "nation": "other",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "24849": {
+      "name": "Kryos",
+      "game_code": "germany-JagdPzIV_AusfBP",
+      "nation": "germany",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "24865": {
+      "name": "Scepter",
+      "game_code": "usa-M-3-Y-Midas",
+      "nation": "usa",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24913": {
+      "name": "Nemesis",
+      "game_code": "uk-GB128_Nemesis",
+      "nation": "uk",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "24945": {
+      "name": "Titan AMX",
+      "game_code": "other-Oth98_AMX_50_100_Titan",
+      "nation": "other",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "25089": {
+      "name": "Объект 752",
+      "game_code": "ussr-R172_Object_752",
+      "nation": "ussr",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "25105": {
+      "name": "Barkhan",
+      "game_code": "germany-G_VK3502_BP",
+      "nation": "germany",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "25121": {
+      "name": "M46 Jaguar",
+      "game_code": "usa-M46_CL",
+      "nation": "usa",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "25169": {
+      "name": "GSOR the TANK",
+      "game_code": "uk-GB141_GSOR_the_TANK",
+      "nation": "uk",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "25345": {
+      "name": "Объект 274a",
+      "game_code": "ussr-R180_Object_274A",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "25361": {
+      "name": "Waffenträger Ritter",
+      "game_code": "germany-Waffentrager_IV_CL",
+      "nation": "germany",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "25377": {
+      "name": "T77",
+      "game_code": "usa-A132_T77",
+      "nation": "usa",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "25601": {
+      "name": "ИС-2 экранированный",
+      "game_code": "ussr-R175_IS_2E",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "25617": {
+      "name": "HWK 30",
+      "game_code": "germany-G140_HWK_30",
+      "nation": "germany",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "25633": {
+      "name": "M-IV-Y",
+      "game_code": "usa-A141_M-4-Y",
+      "nation": "usa",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "25857": {
+      "name": "Объект 777 Вариант II",
+      "game_code": "ussr-R119_Object_777",
+      "nation": "ussr",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "25873": {
+      "name": "Elefant",
+      "game_code": "germany-G148_Elephant",
+      "nation": "germany",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "25889": {
+      "name": "Рейнджер",
+      "game_code": "usa-T21_BP",
+      "nation": "usa",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "25937": {
+      "name": "Mark I Male",
+      "game_code": "uk-GB86_Mark_I_Male",
+      "nation": "uk",
+      "tier": 1,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "26113": {
+      "name": "Объект 452К",
+      "game_code": "ussr-R181_Object_452K",
+      "nation": "ussr",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "26129": {
+      "name": "Эпсилон",
+      "game_code": "germany-Nashorn_BP",
+      "nation": "germany",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "26145": {
+      "name": "High Score",
+      "game_code": "usa-A05_M4_105BD",
+      "nation": "usa",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "26369": {
+      "name": "СТ-62 вариант 2",
+      "game_code": "ussr-R194_ST_62_var_2",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "26385": {
+      "name": "Tiger Frontline",
+      "game_code": "germany-PzVI_AusfTUR",
+      "nation": "germany",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "26401": {
+      "name": "Enforcer",
+      "game_code": "usa-M36_BP",
+      "nation": "usa",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "26625": {
+      "name": "Т-34-85 Прорывной",
+      "game_code": "ussr-T34_85TUR",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "26641": {
+      "name": "Kampfpanzer 07 RH",
+      "game_code": "germany-G154_Kpz_07_RH",
+      "nation": "germany",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "26657": {
+      "name": "ASTRON Rex 105 mm",
+      "game_code": "usa-A140_ASTRON_REX_105",
+      "nation": "usa",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "26881": {
+      "name": "Объект 590",
+      "game_code": "ussr-R187_Object_590",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "26897": {
+      "name": "Kpz. Pr.68 (P)",
+      "game_code": "germany-G164_Kpz_Pr_68_P",
+      "nation": "germany",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "26913": {
+      "name": "Frosty",
+      "game_code": "usa-M24_Chaffee_BP",
+      "nation": "usa",
+      "tier": 6,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "27137": {
+      "name": "К-2",
+      "game_code": "ussr-R192_K_2",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "27153": {
+      "name": "Aufklärungspanzer Panther",
+      "game_code": "germany-G85_Auf_Panther",
+      "nation": "germany",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "27169": {
+      "name": "Киборг",
+      "game_code": "usa-M6E2V2_BP",
+      "nation": "usa",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "27393": {
+      "name": "Объект «Куст»",
+      "game_code": "ussr-R217_Object_Kust",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "27409": {
+      "name": "Projekt Kpz. 07P(E)",
+      "game_code": "germany-G162_Project_Kpz_07P_E",
+      "nation": "germany",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "27425": {
+      "name": "TL-7-120",
+      "game_code": "usa-A146_TL_7_120",
+      "nation": "usa",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "27665": {
+      "name": "Schwarzpanzer 58",
+      "game_code": "germany-G119_Panzer58_SH",
+      "nation": "germany",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "27681": {
+      "name": "Pawlack Tank",
+      "game_code": "usa-A142_Pawlack_Tank",
+      "nation": "usa",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "27921": {
+      "name": "Erich Konzept I",
+      "game_code": "germany-G165_Erich_Koncept",
+      "nation": "germany",
+      "tier": 9,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "27937": {
+      "name": "T49 Бесстрашный",
+      "game_code": "usa-T49_Fearless",
+      "nation": "usa",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "28177": {
+      "name": "LKpz.70 K",
+      "game_code": "germany-G166_LKpz_70_K",
+      "nation": "germany",
+      "tier": 9,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "28193": {
+      "name": "TS-60",
+      "game_code": "usa-A151_TS_60",
+      "nation": "usa",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "28417": {
+      "name": "КВ-4 КТТС",
+      "game_code": "ussr-R121_KV4_KTT",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "28433": {
+      "name": "HWK 12",
+      "game_code": "germany-G126_HWK_12",
+      "nation": "germany",
+      "tier": 9,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "28449": {
+      "name": "T42",
+      "game_code": "usa-A136_T42",
+      "nation": "usa",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "28673": {
+      "name": "ИС-8 Taurus",
+      "game_code": "ussr-R81_IS8_CL",
+      "nation": "ussr",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "28689": {
+      "name": "Rhm. Pzw.",
+      "game_code": "germany-G125_Spz_57_Rh",
+      "nation": "germany",
+      "tier": 10,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "28705": {
+      "name": "XM66F",
+      "game_code": "usa-A153_XM66F",
+      "nation": "usa",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "28945": {
+      "name": "Waffen F1.0",
+      "game_code": "germany-G98_Waffentrager_E100",
+      "nation": "germany",
+      "tier": 10,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "28961": {
+      "name": "Sherman Easy 8",
+      "game_code": "usa-M4A3E8TUR",
+      "nation": "usa",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "29201": {
+      "name": "Tiger-Maus",
+      "game_code": "germany-G167_Tiger_Maus",
+      "nation": "germany",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "29217": {
+      "name": "MBT-B",
+      "game_code": "usa-A150_MBT_B",
+      "nation": "usa",
+      "tier": 9,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "29457": {
+      "name": "VK 19.02“闪送宝”",
+      "game_code": "germany-G190_VK_1602_Quby",
+      "nation": "germany",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "29473": {
+      "name": "ATAC",
+      "game_code": "usa-A175_ATAC",
+      "nation": "usa",
+      "tier": 9,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "29713": {
+      "name": "KJPZ TIII Jäger",
+      "game_code": "germany-G168_KJpz_T_III",
+      "nation": "germany",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "29985": {
+      "name": "SPHT",
+      "game_code": "usa-A178_SPHT",
+      "nation": "usa",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "30481": {
+      "name": "Kampfpanzer 70 Ракетный",
+      "game_code": "germany-G14_KpfPz_70R",
+      "nation": "germany",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "30753": {
+      "name": "XM57",
+      "game_code": "usa-A168_XM_57",
+      "nation": "usa",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": true,
+      "deprecated": false
+    },
+    "51201": {
+      "name": "КВ-220 Бета-Тест",
+      "game_code": "ussr-KV-220",
+      "nation": "ussr",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "51457": {
+      "name": "Матильда IV",
+      "game_code": "ussr-Matilda_II_LL",
+      "nation": "ussr",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "51473": {
+      "name": "Pz.Kpfw. V/IV",
+      "game_code": "germany-PzV_PzIV",
+      "nation": "germany",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "51489": {
+      "name": "T2 Light Tank",
+      "game_code": "usa-T2_lt",
+      "nation": "usa",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "51713": {
+      "name": "Черчилль III",
+      "game_code": "ussr-Churchill_LL",
+      "nation": "ussr",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "51729": {
+      "name": "Pz.Kpfw. II Ausf. J",
+      "game_code": "germany-PzII_J",
+      "nation": "germany",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "51745": {
+      "name": "Ram II",
+      "game_code": "usa-Ram-II",
+      "nation": "usa",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "51809": {
+      "name": "Type 98 Ke-Ni Otsu",
+      "game_code": "japan-Ke_Ni_B",
+      "nation": "japan",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "51985": {
+      "name": "Pz.Kpfw. S35 739 (f)",
+      "game_code": "germany-S35_captured",
+      "nation": "germany",
+      "tier": 3,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "52065": {
+      "name": "Hetzer Kamesan SP",
+      "game_code": "japan-G09_Hetzer_GuP",
+      "nation": "japan",
+      "tier": 4,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "52225": {
+      "name": "БТ-СВ",
+      "game_code": "ussr-BT-SV",
+      "nation": "ussr",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "52241": {
+      "name": "Pz.Kpfw. B2 740 (f)",
+      "game_code": "germany-B-1bis_captured",
+      "nation": "germany",
+      "tier": 4,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "52257": {
+      "name": "M4A2E4 Sherman",
+      "game_code": "usa-M4A2E4",
+      "nation": "usa",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "52481": {
+      "name": "Валентайн II",
+      "game_code": "ussr-Valentine_LL",
+      "nation": "ussr",
+      "tier": 4,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "52497": {
+      "name": "Pz.Kpfw. 38H 735 (f)",
+      "game_code": "germany-H39_captured",
+      "nation": "germany",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "52513": {
+      "name": "M6A2E1",
+      "game_code": "usa-M6A2E1",
+      "nation": "usa",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "52561": {
+      "name": "Tortoise",
+      "game_code": "uk-GB32_Tortoise",
+      "nation": "uk",
+      "tier": 9,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "52737": {
+      "name": "М3 лёгкий",
+      "game_code": "ussr-M3_Stuart_LL",
+      "nation": "ussr",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "52769": {
+      "name": "M22 Locust",
+      "game_code": "usa-M22_Locust",
+      "nation": "usa",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "52993": {
+      "name": "А-32",
+      "game_code": "ussr-A-32",
+      "nation": "ussr",
+      "tier": 4,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "53025": {
+      "name": "M6A2E1 EXP",
+      "game_code": "usa-M6A2E1_exp",
+      "nation": "usa",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "53249": {
+      "name": "КВ-5",
+      "game_code": "ussr-KV-5",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "53505": {
+      "name": "Т-127",
+      "game_code": "ussr-T-127",
+      "nation": "ussr",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "53537": {
+      "name": "T1E6",
+      "game_code": "usa-T1_E6",
+      "nation": "usa",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "53585": {
+      "name": "Matilda Black Prince",
+      "game_code": "uk-GB68_Matilda_Black_Prince",
+      "nation": "uk",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "53761": {
+      "name": "СУ-85И",
+      "game_code": "ussr-SU_85I",
+      "nation": "ussr",
+      "tier": 5,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "53841": {
+      "name": "TOG II*",
+      "game_code": "uk-GB63_TOG_II",
+      "nation": "uk",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "54097": {
+      "name": "AT 15A",
+      "game_code": "uk-GB71_AT_15A",
+      "nation": "uk",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "54273": {
+      "name": "СУ-76И",
+      "game_code": "ussr-SU76I",
+      "nation": "ussr",
+      "tier": 3,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "54289": {
+      "name": "Löwe",
+      "game_code": "germany-Lowe",
+      "nation": "germany",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "54353": {
+      "name": "Excelsior",
+      "game_code": "uk-GB51_Excelsior",
+      "nation": "uk",
+      "tier": 5,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "54529": {
+      "name": "Тетрарх",
+      "game_code": "ussr-Tetrarch_LL",
+      "nation": "ussr",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "54545": {
+      "name": "T-25",
+      "game_code": "germany-T-25",
+      "nation": "germany",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "54785": {
+      "name": "СУ-100Y",
+      "game_code": "ussr-SU100Y",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "54801": {
+      "name": "T-15",
+      "game_code": "germany-T-15",
+      "nation": "germany",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "54865": {
+      "name": "Light Mk. VIC",
+      "game_code": "uk-GB76_Mk_VIC",
+      "nation": "uk",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "55057": {
+      "name": "Pz.Kpfw. IV hydrostat.",
+      "game_code": "germany-PzIV_Hydro",
+      "nation": "germany",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "55073": {
+      "name": "T7 Combat Car",
+      "game_code": "usa-T7_Combat_Car",
+      "nation": "usa",
+      "tier": 2,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "55297": {
+      "name": "СУ-122-44",
+      "game_code": "ussr-SU122_44",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "55313": {
+      "name": "8,8 cm Pak 43 Jagdtiger",
+      "game_code": "germany-JagdTiger_SdKfz_185",
+      "nation": "germany",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "55889": {
+      "name": "Cromwell B",
+      "game_code": "uk-GB85_Cromwell_Berlin",
+      "nation": "uk",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "56097": {
+      "name": "M4A3E8 Fury",
+      "game_code": "usa-A104_M4A3E8A",
+      "nation": "usa",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "56577": {
+      "name": "ЛТП",
+      "game_code": "ussr-LTP",
+      "nation": "ussr",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "56609": {
+      "name": "T28 Concept",
+      "game_code": "usa-A102_T28_concept",
+      "nation": "usa",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "57105": {
+      "name": "Dicker Max",
+      "game_code": "germany-DickerMax",
+      "nation": "germany",
+      "tier": 6,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "57361": {
+      "name": "Pz.Kpfw. IV Schmalturm",
+      "game_code": "germany-PzIV_schmalturm",
+      "nation": "germany",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "57617": {
+      "name": "Panther/M10",
+      "game_code": "germany-Panther_M10",
+      "nation": "germany",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "58641": {
+      "name": "VK 72.01 (K)",
+      "game_code": "germany-VK7201",
+      "nation": "germany",
+      "tier": 10,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "58881": {
+      "name": "ИС-5 (Объект 730)",
+      "game_code": "ussr-R113_Object_730",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "59137": {
+      "name": "ИС-2 (1945)",
+      "game_code": "ussr-R71_IS_2B",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "59649": {
+      "name": "ИСУ-122С",
+      "game_code": "ussr-R116_ISU122C_Berlin",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "59665": {
+      "name": "Großtraktor - Krupp",
+      "game_code": "germany-G100_Gtraktor_Krupp",
+      "nation": "germany",
+      "tier": 3,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "59905": {
+      "name": "Т-54 первый образец",
+      "game_code": "ussr-R112_T54_45",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "60161": {
+      "name": "ИС-2Ш",
+      "game_code": "ussr-IS-2Sh",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "60177": {
+      "name": "Panther mit 8,8 cm L/71",
+      "game_code": "germany-G106_PzKpfwPanther_AusfF",
+      "nation": "germany",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "60417": {
+      "name": "ИС-3 Защитник",
+      "game_code": "ussr-R115_IS-3_auto",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "60929": {
+      "name": "БТ-7 артиллерийский",
+      "game_code": "ussr-R105_BT_7A",
+      "nation": "ussr",
+      "tier": 3,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "62737": {
+      "name": "leKpz M 41 90 mm",
+      "game_code": "germany-G120_M41_90",
+      "nation": "germany",
+      "tier": 8,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "62977": {
+      "name": "T-44-100",
+      "game_code": "ussr-R127_T44_100_P",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "62993": {
+      "name": "VK 45.03",
+      "game_code": "germany-G118_VK4503",
+      "nation": "germany",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "63553": {
+      "name": "AMX Chasseur de chars",
+      "game_code": "france-F68_AMX_Chasseur_de_char_46",
+      "nation": "france",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "63585": {
+      "name": "Tiger Kuromorimine SP",
+      "game_code": "japan-PzVI_GuP",
+      "nation": "japan",
+      "tier": 6,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "63601": {
+      "name": "Дракула",
+      "game_code": "other-AMX_dracula",
+      "nation": "other",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "63841": {
+      "name": "Panzer IV Ankou Special",
+      "game_code": "japan-Pz_IV_AusfH",
+      "nation": "japan",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "64001": {
+      "name": "T-34-85 Rudy",
+      "game_code": "ussr-T-34-85_Rudy",
+      "nation": "ussr",
+      "tier": 7,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "64017": {
+      "name": "Франкенштанк",
+      "game_code": "germany-S01_Frankentank",
+      "nation": "germany",
+      "tier": 7,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "64065": {
+      "name": "FCM 50 t",
+      "game_code": "france-FCM_50t",
+      "nation": "france",
+      "tier": 8,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "64081": {
+      "name": "Mk I* Heavy Tank",
+      "game_code": "uk-GB_Mark_I",
+      "nation": "uk",
+      "tier": 1,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": true
+    },
+    "64257": {
+      "name": "T-34-85 Победный",
+      "game_code": "ussr-T-34-85_Victory",
+      "nation": "ussr",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "64273": {
+      "name": "Новогодний Jagdtiger 8.8",
+      "game_code": "germany-JagdTiger_SdKfz_185_Snowstorm",
+      "nation": "germany",
+      "tier": 8,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "64337": {
+      "name": "AC IV Sentinel",
+      "game_code": "uk-GB35_Sentinel_AC_IV",
+      "nation": "uk",
+      "tier": 6,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "64529": {
+      "name": "E 25",
+      "game_code": "germany-E-25",
+      "nation": "germany",
+      "tier": 7,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "64561": {
+      "name": "112 Ледяной",
+      "game_code": "china-Ch23_112",
+      "nation": "china",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "64593": {
+      "name": "Коннор Гневный",
+      "game_code": "uk-GB44_Archer_Custom",
+      "nation": "uk",
+      "tier": 5,
+      "type": "AT-SPG",
+      "test": false,
+      "deprecated": false
+    },
+    "64769": {
+      "name": "ИС-6 Бесстрашный",
+      "game_code": "ussr-Object252_Fearless",
+      "nation": "ussr",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "64801": {
+      "name": "T34 Independence",
+      "game_code": "usa-T34_hvy_Freedom",
+      "nation": "usa",
+      "tier": 8,
+      "type": "heavyTank",
+      "test": false,
+      "deprecated": false
+    },
+    "64849": {
+      "name": "AC 1 Sentinel",
+      "game_code": "uk-Sentinel_AC1",
+      "nation": "uk",
+      "tier": 4,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    },
+    "65329": {
+      "name": "Type 62",
+      "game_code": "china-Ch02_Type62",
+      "nation": "china",
+      "tier": 7,
+      "type": "lightTank",
+      "test": false,
+      "deprecated": false
+    },
+    "65377": {
+      "name": "Type 3 Chi-Nu Kai",
+      "game_code": "japan-Chi_Nu_Kai",
+      "nation": "japan",
+      "tier": 5,
+      "type": "mediumTank",
+      "test": false,
+      "deprecated": false
+    }
+  }
+}

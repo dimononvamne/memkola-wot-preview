@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1018">
+  <meta name="description" content="Рейтинг игроков WoT Blitz по регионам EU, NA и Asia. Онлайн-таблица Live Ratings на MEMKOLA wot.">
+  <title>Рейтинг игроков — MEMKOLA wot</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oxanium:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://docs.google.com">
+  <link rel="stylesheet" href="./ratings.css?v=1">
+  <link rel="stylesheet" href="./site-background.css?v=4.9">
+  <script src="./config.js"></script>
+  <script defer src="./site-background.js?v=4.8"></script>
+  <script defer src="./visits-tracker.js?v=1"></script>
+  <script defer src="./ratings.js?v=1"></script>
+  <link rel="stylesheet" href="./site-nav.css?v=1">
+  <script defer src="./site-nav.js?v=1"></script>
+  <script defer src="./challenge-visibility.js?v=1.45"></script>
+</head>
+<body class="ratings-page">
+  <a class="ratings-skip" href="#ratings-board">К таблице рейтинга</a>
+  <header class="ratings-topbar"><div class="ratings-shell ratings-topbar-inner">
+    <a class="brand" href="./index.html" aria-label="MEMKOLA wot — главная">MEM<span>KOLA</span><small>WOT</small></a>
+    <nav aria-label="Разделы сайта"><a href="./index.html">Тир-листы</a><a href="./session.html">Сессионка</a><a href="./ratings.html" aria-current="page">Рейтинг игроков</a></nav>
+  </div></header>
+  <main class="ratings-shell">
+    <section class="ratings-intro" aria-labelledby="ratings-title">
+      <div><p class="ratings-eyebrow"><span></span> WORLD OF TANKS BLITZ</p><h1 id="ratings-title">РЕЙТИНГ <span>ИГРОКОВ</span></h1><p class="ratings-subtitle">Следи за лидерами. Выбери свой регион.</p></div>
+      <a class="ratings-session-link" href="./session.html">Моя сессионка <span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="ratings-board" id="ratings-board" aria-label="Таблица рейтинга">
+      <div class="ratings-toolbar">
+        <div class="ratings-regions" role="group" aria-label="Регион рейтинга">
+          <button type="button" data-region="eu" aria-pressed="true"><b>EU</b><span>Европа</span></button>
+          <button type="button" data-region="na" aria-pressed="false"><b>NA</b><span>Северная Америка</span></button>
+          <button type="button" data-region="asia" aria-pressed="false"><b>ASIA</b><span>Азия</span></button>
+        </div>
+        <div class="ratings-actions"><button id="ratings-refresh" type="button" aria-label="Обновить таблицу"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M5 8a8 8 0 0 1 13-3l2 2M4 17l2 2a8 8 0 0 0 13-3"/></svg><span>Обновить</span></button><button id="ratings-expand" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/></svg><span>Развернуть</span></button></div>
+      </div>
+      <div class="ratings-source-row"><div><strong id="ratings-region-label">Европа</strong><span>Live Ratings · Google-таблица</span></div><a id="ratings-source" href="https://docs.google.com/spreadsheets/d/1bYkST9fHBRUKom64F1V4aEK03wF0gLH-QpDu-9WOkh4/htmlview#gid=1310687274" target="_blank" rel="noopener noreferrer">Открыть оригинал <span aria-hidden="true">↗</span></a></div>
+      <div id="ratings-frame-wrap" class="ratings-frame-wrap" aria-busy="true">
+        <iframe id="ratings-frame" title="Рейтинг WoT Blitz — Европа, Live Ratings" src="https://docs.google.com/spreadsheets/d/1bYkST9fHBRUKom64F1V4aEK03wF0gLH-QpDu-9WOkh4/htmlview/sheet?headers=false&amp;gid=1310687274" referrerpolicy="no-referrer" loading="eager"></iframe>
+      </div>
+      <div class="ratings-status-row"><p id="ratings-status" role="status" aria-live="polite">Открываем таблицу…</p><label><input id="ratings-auto" type="checkbox" checked> Обновлять каждые 5 мин</label></div>
+      <p id="ratings-loading-help" class="ratings-loading-help" hidden>Загрузка занимает больше времени. Можно повторить обновление или открыть оригинал по ссылке над таблицей.</p>
+    </section>
+    <div class="ratings-notes"><p>Данные и расчёты публикует автор Live Ratings. Автообновление перечитывает таблицу; время обновления самих данных зависит от её автора.</p><p>На телефоне листай таблицу влево и вправо. Если Google-таблица не отображается, нажми «Открыть оригинал».</p></div>
+    <details class="ratings-legend"><summary>Что означают столбцы?</summary><dl><div><dt>Position / Positions Changed</dt><dd>Место и изменение позиции.</dd></div><div><dt>Username / Clan</dt><dd>Ник игрока и клан.</dd></div><div><dt>Points / Points Changed</dt><dd>Очки рейтинга и их изменение.</dd></div><div><dt>Battles / WR</dt><dd>Бои и процент побед за период расчёта автора таблицы.</dd></div></dl><p>«No Battles» — нет новых боёв, «New to List» — игрок появился в списке. Архивы сезонов доступны в оригинале.</p></details>
+  </main>
+  <footer class="ratings-shell ratings-footer"><span>MEMKOLA WOT</span><a href="./index.html">На главную ↗</a></footer>
+</body>
+</html>

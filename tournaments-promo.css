@@ -1,0 +1,6 @@
+/* Tournament link and CTA: isolated styles, does not affect tier lists. */
+.tourney-promo{display:flex;align-items:center;gap:21px;margin:27px 0 10px;padding:25px 29px;border:1px solid #a77f4477;border-radius:13px;background:linear-gradient(110deg,#31281f,#16252d 65%,#10202a);box-shadow:0 10px 50px #0002}.tourney-promo-icon{font-size:45px;line-height:1;filter:drop-shadow(0 8px 9px #0005)}.tourney-promo-text{flex:1}.tourney-promo-text>span{font:800 10px Oxanium,Arial,sans-serif;letter-spacing:1.8px;color:#e7b46c}.tourney-promo h2{font-family:Oxanium,Arial,sans-serif;font-size:26px;margin:5px 0}.tourney-promo p{margin:0;color:#aebdc2;font-size:12px;line-height:1.65}.tourney-promo-button{white-space:nowrap;text-decoration:none}.tourney-nav-btn{text-decoration:none}
+@media(max-width:820px){.tourney-promo{padding:18px 20px}.tourney-promo-icon{font-size:33px}.tourney-promo h2{font-size:22px}.tourney-nav-btn{padding:7px 9px}}
+@media(max-width:600px){.tourney-promo{flex-wrap:wrap;gap:12px}.tourney-promo-text{flex-basis:calc(100% - 65px)}.tourney-promo-button{width:100%}.tourney-nav-btn{font-size:11px}.nav-actions{gap:5px}.tourney-nav-btn{padding:7px 6px}}
+/* On narrow screens the large tournament card stays visible; keep the top nav uncluttered. */
+@media(max-width:740px){.tourney-nav-btn{display:none!important}}

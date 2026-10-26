@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1018">
+<meta name="description" content="Турниры MEMKOLA WOT: регистрация, расписание, результаты участников и архив победителей.">
+<title>Турниры — MEMKOLA wot</title>
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oxanium:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./tournaments.css?v=13">
+<script src="./config.js"></script><script type="module" src="./tournaments.js?v=13"></script>
+
+<!-- MEMKOLA shared background: public wallpaper (managed on homepage) -->
+<link rel="stylesheet" href="./site-background.css?v=4.9">
+<script defer src="./site-background.js?v=4.8"></script>
+  <script defer src="./visits-tracker.js?v=1"></script>
+  <link rel="stylesheet" href="./site-nav.css?v=1">
+  <script defer src="./site-nav.js?v=1"></script>
+  <script defer src="./challenge-visibility.js?v=1.45"></script>
+</head>
+<body>
+<header class="topbar"><div class="shell top-inner">
+<a href="./index.html" class="brand">MEM<span>KOLA</span> <small>wot</small></a>
+<nav><a class="back" href="./index.html">← На главную</a><a class="back" href="./calendar.html">📅 Календарь Blitz</a><button id="auth-button" class="btn btn-ghost">Вход для организатора</button><a class="back" href="./calculator.html">Калькулятор</a></nav>
+</div></header>
+<main class="shell">
+<section class="hero"><div class="overline">MEMKOLA // TOURNAMENT CENTER</div><div class="hero-inner"><div><h1>ТУРНИРЫ<span>.</span></h1><p>Соревнования сообщества MEMKOLA: записывайся на турнир, следи за таблицей результатов и смотри победителей прошедших событий.</p><div class="hero-actions"><a href="#events" class="btn btn-gold">Смотреть турниры ↓</a><span id="connection" class="dim">Загружаем расписание...</span></div></div><div class="hero-art" aria-hidden="true"><div class="orbit"></div><span class="cup">🏆</span><div class="hero-score">01 <span>WINNER</span></div></div></div></section>
+<nav class="tournament-sections" aria-label="Разделы турниров">
+  <a class="tournament-section active" href="./tournaments.html" aria-current="page"><span>🏆</span><strong>Турниры сообщества</strong><small>Наши MEM CUP и результаты</small></a>
+  <a class="tournament-section" href="./calendar.html"><span>📅</span><strong>Календарь турниров WoT Blitz</strong><small>Отобранные турниры сервера EU</small></a>
+</nav>
+<section id="admin-bar" class="admin-bar" hidden><span>⚙️ РЕЖИМ ОРГАНИЗАТОРА</span><button class="btn btn-gold" id="new-tournament">＋ Создать турнир</button></section>
+<section id="events" class="events"><div class="section-head"><div><div class="overline">LIVE / HISTORY</div><h2>Турниры сообщества</h2></div><div class="filters"><button class="chip selected" data-filter="all">Все</button><button class="chip" data-filter="active">Текущие</button><button class="chip" data-filter="completed">Завершённые</button></div></div>
+<div id="events-list" class="events-grid"></div><p id="events-empty" class="notice" hidden>Пока нет опубликованных турниров. Заглядывай позже!</p></section>
+<section id="tournament-detail" class="details" hidden>
+ <div class="detail-top"><button id="detail-back" class="text-button">← Все турниры</button><button id="detail-copy" class="btn btn-ghost">↗ Поделиться турниром</button></div>
+ <div class="detail-heading"><div><div id="detail-status" class="overline"></div><h2 id="detail-title"></h2><div id="detail-date" class="muted"></div></div><div id="detail-actions" class="admin-actions" hidden><button id="edit-tournament" class="btn btn-ghost">✎ Изменить</button><button id="delete-tournament" class="btn btn-danger">Удалить турнир</button></div></div>
+ <div id="banner-box" class="event-banner-box" hidden><img id="banner-img" alt="Оформление турнира" loading="lazy"></div>
+ <div class="detail-grid"><section class="panel"><h3>О турнире</h3><p id="detail-description" class="body-copy"></p><h3>Правила</h3><p id="detail-rules" class="body-copy preserve"></p></section><section id="registration-panel" class="panel registration-panel"><h3>Регистрация на турнир</h3><p class="muted" id="registration-info"></p><form id="register-form" hidden><label>Твой игровой ник<input id="register-nick" placeholder="Например: NoPushBro" minlength="2" maxlength="40" required autocomplete="off"></label><input class="honey" id="register-website" tabindex="-1" autocomplete="off" aria-hidden="true"><button type="submit" class="btn btn-gold wide">Подать заявку</button></form><p id="register-result" class="response" aria-live="polite"></p></section></div>
+ <section class="results-section"><div class="section-head compact"><div><div class="overline">STANDINGS // DAMAGE</div><h3>Участники и результаты</h3></div><div class="results-meta"><span id="players-count" class="muted"></span><span id="results-sync" class="results-sync" role="status" hidden></span></div></div>
+ <div id="participants-editor" class="panel admin-participants" hidden><div class="admin-row"><h4>Заявки и результаты</h4><button id="save-results" class="btn btn-gold">Сохранить все результаты</button></div><p class="muted small">Места считаются сами: больше урон — выше место. Золото, серебро и бронза подсвечиваются сразу при вводе. При равном уроне выше участник с меньшим номером. Места получают только принятые игроки с указанным уроном больше нуля. Для публикации нажми «Сохранить все результаты».</p><form id="add-player-form" class="add-player-form"><input id="add-player-nick" placeholder="Ник игрока вручную" required minlength="2" maxlength="40"><button type="submit" class="btn btn-ghost">＋ Добавить участника</button></form><div id="admin-players"></div></div>
+ <div class="table-viewport"><table><thead><tr><th>№ участника</th><th>Ник</th><th>Танк</th><th>Урон</th><th>Карта</th><th>Место</th></tr></thead><tbody id="public-players"></tbody></table></div>
+ </section>
+ <section class="winners"><div class="section-head compact"><div><div class="overline">HALL OF FAME</div><h3>Призёры</h3></div></div><div id="podium" class="podium"></div><div id="poster-box" class="poster-box" hidden><img id="poster-img" alt="Постер тройки призёров" loading="lazy"></div><p id="poster-hint" class="muted">Картинка призёров появится после завершения турнира.</p></section>
+ <section id="youtube-recording-section" class="youtube-recording-section" aria-labelledby="youtube-recording-heading" hidden>
+  <div class="section-head compact"><div><div class="overline">WATCH // STREAM REPLAY</div><h3 id="youtube-recording-heading">Запись трансляции</h3></div><span class="muted youtube-recording-caption">Смотри, как проходил турнир</span></div>
+  <a id="youtube-recording-link" class="youtube-recording-card" target="_blank" rel="noopener noreferrer" aria-label="Смотреть запись турнира на YouTube">
+   <div class="youtube-recording-cover"><img id="youtube-recording-thumbnail" alt="Превью записи турнира на YouTube" loading="lazy" referrerpolicy="no-referrer"><span class="youtube-recording-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="youtube-recording-overlay-label">ПОЛНАЯ ЗАПИСЬ</span></div>
+   <div class="youtube-recording-info"><div><div class="youtube-recording-kicker">MEMKOLA // VIDEO ARCHIVE</div><strong id="youtube-recording-title">Запись турнира</strong><span>Открыть видео на YouTube ↗</span></div><div class="youtube-recording-action" aria-hidden="true">▶ Смотреть</div></div>
+  </a>
+ </section>
+</section>
+</main>
+<footer><div class="shell">© MEMKOLA wot · Фанатские турниры сообщества <a href="./index.html">Вернуться к тир-листам ↗</a></div></footer>
+<dialog id="login-dialog"><form id="login-form" class="modal"><div class="modal-header"><h3>Вход организатора</h3><button type="button" class="dialog-close" aria-label="Закрыть">×</button></div><p class="muted">Тот же аккаунт администратора, что используется для тир-листов.</p><label>Email<input type="email" id="login-email" required></label><label>Пароль<input type="password" id="login-password" required></label><p id="login-error" class="response"></p><button type="submit" class="btn btn-gold wide">Войти</button></form></dialog>
+<dialog id="tournament-dialog"><form id="tournament-form" class="modal modal-wide"><div class="modal-header"><h3 id="tournament-form-heading">Создать турнир</h3><button type="button" class="dialog-close" aria-label="Закрыть">×</button></div>
+<label>Название турнира<input id="t-name" required minlength="3" maxlength="110" placeholder="Например: MEMKOLA CUP #1"></label>
+<label>Дата и время начала<input id="t-date" type="datetime-local"></label>
+<label>Статус<select id="t-status"><option value="announced">Анонсирован</option><option value="registration">Идёт регистрация</option><option value="ongoing">Идёт турнир</option><option value="completed">Завершён</option></select></label>
+<label>Описание<textarea id="t-description" rows="3" maxlength="3000" placeholder="Формат, призы, сервер..."></textarea></label>
+<label>Правила<textarea id="t-rules" rows="5" maxlength="8000" placeholder="Режим, условия, ограничения, призы, правила начисления очков..."></textarea></label>
+<div class="tournament-youtube-field">
+ <label for="t-youtube">Ссылка на запись YouTube (необязательно)</label>
+ <input id="t-youtube" type="url" inputmode="url" maxlength="500" placeholder="https://www.youtube.com/watch?v=..." autocomplete="off" spellcheck="false">
+ <p class="muted small">Вставь ссылку на запись стрима, обычное видео или YouTube Shorts. После сохранения внизу страницы турнира появится превью с переходом к записи. Чтобы убрать видео, очисти поле.</p>
+ <p id="t-youtube-error" class="response" aria-live="polite" hidden></p>
+ <a id="t-youtube-preview" class="tournament-youtube-preview" target="_blank" rel="noopener noreferrer" hidden><span class="preview-image-wrap"><img id="t-youtube-preview-img" alt="Превью YouTube" loading="lazy"></span><span class="preview-label">▶ Проверить запись на YouTube ↗</span></a>
+</div>
+<div class="tournament-image-fields">
+ <div class="tournament-image-field"><label>Логотип / афиша турнира сверху (PNG, JPG или WEBP до 5 МБ)<input id="t-banner" type="file" accept="image/png,image/jpeg,image/webp"></label><div class="current-image" id="current-banner" hidden><img id="current-banner-img" alt="Текущая афиша турнира"><label class="check"><input type="checkbox" id="t-banner-clear"> Убрать текущую афишу</label></div><p class="muted small">Отображается в начале страницы турнира и в карточке архива.</p></div>
+ <div class="tournament-image-field"><label>Постер тройки призёров снизу (PNG, JPG или WEBP до 5 МБ)<input id="t-poster" type="file" accept="image/png,image/jpeg,image/webp"></label><div class="current-image" id="current-poster" hidden><img id="current-poster-img" alt="Текущий постер призёров"><label class="check"><input type="checkbox" id="t-poster-clear"> Убрать текущий постер</label></div><p class="muted small">Остаётся в разделе «Призёры» под итоговой таблицей.</p></div>
+</div>
+<label class="check"><input type="checkbox" id="t-registration"> Разрешить регистрацию по нику</label>
+<label class="check"><input type="checkbox" id="t-published"> Опубликовать турнир для зрителей</label>
+<p class="muted small">Публичная регистрация доступна только при статусе «Идёт регистрация», открытой регистрации и включённой публикации.</p><p id="t-error" class="response"></p><button type="submit" id="save-tournament" class="btn btn-gold wide">Сохранить турнир</button></form></dialog>
+<div id="toast" class="toast" aria-live="polite"></div>
+</body></html>

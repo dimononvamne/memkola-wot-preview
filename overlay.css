@@ -1,0 +1,55 @@
+/* v17: overlay-only viewport rules. This CSS is shared with the builder preview.
+   Never apply overflow:hidden to the ordinary widgets.html page. */
+:root{--mw-accent:#F4BD6A;--mw-text:#F7F9FC}
+body.overlay-page{margin:0;padding:0;overflow:hidden;background:transparent!important;min-height:100vh}
+body.overlay-page #overlay-root{width:100%;height:100%;margin:0;padding:0;overflow:hidden}
+.mw-outer,.mw-outer *{box-sizing:border-box}
+.mw-outer{position:relative;display:block;color:var(--mw-text);font-family:var(--mw-font,Manrope,Arial,sans-serif);letter-spacing:var(--mw-spacing,0);font-weight:var(--mw-weight,800);text-align:var(--mw-align,left);flex:none;overflow:hidden;container-type:inline-size}
+.mw-card{position:relative;display:flex;flex-direction:column;gap:var(--mw-gap,9px);width:100%;height:100%;padding:var(--mw-padding,18px);border:var(--mw-bw,1px) solid var(--mw-border,#86623F);border-radius:var(--mw-radius,16px);background:var(--mw-bg,rgba(16,27,41,.88));box-shadow:0 6px var(--mw-shadow,20px) rgba(0,0,0,.25);backdrop-filter:blur(var(--mw-blur,7px));-webkit-backdrop-filter:blur(var(--mw-blur,7px));overflow:hidden;min-width:0;min-height:0}
+.mw-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;min-width:0;flex-shrink:0}
+.mw-head-main{min-width:0;overflow-wrap:anywhere}
+.mw-title{color:var(--mw-accent);font-size:var(--mw-title-size,14px);line-height:1.17;text-transform:none;overflow-wrap:anywhere}
+.mw-nickname{font-size:var(--mw-name-size,22px);line-height:1.18;margin-top:4px;overflow-wrap:anywhere}
+.mw-subtitle{font-size:var(--mw-footer-size,11px);opacity:.75;line-height:1.35;margin-top:4px;overflow-wrap:anywhere}
+.mw-live{flex:none;color:var(--mw-live,#65E4A1);font-size:calc(var(--mw-label-size,11px) * .92);border:1px solid currentColor;border-radius:999px;padding:4px 9px;white-space:nowrap;font-weight:850;background:rgba(9,18,25,.30)}
+.mw-ended{color:#c7cfdd}
+.mw-stats{flex:1;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(118px,100%),1fr));gap:var(--mw-gap,9px);min-height:0;align-content:start;overflow:hidden}
+.mw-stat{min-width:0;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:3px;padding:8px 10px;border:1px solid color-mix(in srgb,var(--mw-border) 60%,transparent);border-radius:max(0px,calc(var(--mw-radius) - 6px));background:rgba(255,255,255,.045);overflow:hidden}
+.mw-stat-value{font-size:var(--mw-value-size,28px);font-weight:900;font-family:var(--mw-digits,Orbitron,Arial,sans-serif);font-variant-numeric:tabular-nums;line-height:1.12;white-space:nowrap;min-width:0;overflow:hidden}
+.mw-stat-label{font-size:var(--mw-label-size,11px);font-weight:800;line-height:1.3;overflow-wrap:anywhere}
+.mw-foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;color:var(--mw-text);font-size:var(--mw-footer-size,11px);line-height:1.2;opacity:.78;flex-shrink:0}
+.mw-brand{color:var(--mw-accent)}
+.mw-demo-mark{position:absolute;top:0;right:13px;z-index:2;background:var(--mw-accent);color:#0c1722;font:800 10px Manrope,Arial,sans-serif;padding:3px 9px;border-radius:0 0 7px 7px;max-width:70%;white-space:nowrap}
+.mw-error{font-size:calc(var(--mw-label-size,11px) + 1px);padding:5px 7px;background:rgba(147,37,37,.45);border-radius:6px;flex-shrink:0}
+/* Horizontal bar */
+.layout-bar .mw-card{flex-direction:row;align-items:center;gap:var(--mw-gap,9px)}
+.layout-bar .mw-head{flex:0 1 23%;min-width:0;max-width:32%;align-items:flex-start;flex-direction:column;gap:5px}
+.layout-bar .mw-stats{display:flex;align-items:stretch;flex:1;min-width:0;gap:var(--mw-gap,9px)}
+.layout-bar .mw-stat{flex:1;min-width:0;border:none;background:transparent;padding:3px 4px}
+.layout-bar .mw-foot{flex:0 1 15%;min-width:0;flex-direction:column;align-items:flex-end;text-align:right}
+.layout-bar .mw-nickname{font-size:min(var(--mw-name-size),25px)}
+/* Vertical, stacked for mobile streaming */
+.layout-vertical .mw-stats{display:flex;flex-direction:column;justify-content:flex-start;gap:var(--mw-gap,9px)}
+.layout-vertical .mw-stat{flex:1;min-height:0;max-height:180px;padding:7px 11px}
+.layout-vertical .mw-head{flex-direction:column;gap:9px}
+.layout-vertical .mw-foot{margin-top:auto;flex-direction:column;align-items:flex-start}
+/* Frame-free minimal */
+.layout-minimal .mw-card{background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;padding:var(--mw-padding,18px);text-shadow:0 2px 6px rgba(0,0,0,.7)}
+.layout-minimal .mw-stats{display:flex;flex-wrap:wrap;align-content:center}
+.layout-minimal .mw-stat{background:transparent;border:0;padding:4px 12px 4px 0;flex:1}
+/* Single-row ticker. CSS motion only inside the element; reduced-motion honored. */
+.layout-ticker .mw-card{flex-direction:row;align-items:center;gap:18px}
+.layout-ticker .mw-head{flex:0 0 auto;max-width:24%;align-items:center}
+.layout-ticker .mw-nickname{font-size:min(var(--mw-name-size,22px),22px)}
+.layout-ticker .mw-stats{display:flex;flex:1;gap:20px;align-items:center;overflow:hidden;min-width:0}
+.layout-ticker .mw-stat{display:inline-flex;flex:none;flex-direction:row;align-items:center;gap:7px;padding:4px 0;background:transparent;border:0;white-space:nowrap}
+.layout-ticker .mw-foot{display:none}
+.layout-ticker.mw-animated .mw-stats{justify-content:flex-start}
+.layout-ticker.mw-animated .mw-stat:first-child{animation:mw-ticker-motion 12s ease-in-out infinite alternate}
+@keyframes mw-ticker-motion{0%,15%{margin-left:0}85%,100%{margin-left:min(-25%, -100px)}}
+@media (prefers-reduced-motion:reduce){.layout-ticker.mw-animated .mw-stat:first-child{animation:none}}
+/* Extremely narrow overlay dimensions degrade gracefully, never affect builder scrollbar. */
+.mw-outer[style*="width: 240px"] .mw-head{flex-wrap:wrap}
+
+/* Responsive number fit at narrow overlay widths. The JS additionally measures long values. */
+.layout-bar .mw-stat-value,.layout-ticker .mw-stat-value{font-size:min(var(--mw-value-size),max(14px,2.8cqw))}

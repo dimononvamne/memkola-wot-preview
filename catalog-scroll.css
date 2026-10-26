@@ -1,0 +1,50 @@
+/* MEMKOLA Tier Lists v4.2 — fixed-height scrolling tank catalog.
+   Only the cards scroll; catalog header and four filter rows stay visible. */
+#tank-pool-items.tank-pool-items {
+  box-sizing: border-box;
+  max-height: min(56vh, 550px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: #b58b51 #14202b;
+  align-content: start;
+  padding-right: 8px;
+  touch-action: pan-y;
+}
+#tank-pool-items.tank-pool-items::-webkit-scrollbar { width: 9px; }
+#tank-pool-items.tank-pool-items::-webkit-scrollbar-track {
+  background: #121d27;
+  border-radius: 12px;
+}
+#tank-pool-items.tank-pool-items::-webkit-scrollbar-thumb {
+  background: #85643c;
+  border: 2px solid #121d27;
+  border-radius: 12px;
+}
+#tank-pool-items.tank-pool-items::-webkit-scrollbar-thumb:hover {
+  background: #d3a158;
+}
+#tank-pool-items.tank-pool-items:focus-visible {
+  outline: 2px solid #e4b15f;
+  outline-offset: -3px;
+}
+.catalog-scroll-hint {
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(14, 22, 30, 0.55);
+  border-top: 1px solid rgba(225, 182, 108, 0.12);
+  color: #a4b1be;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+@media (max-width: 700px) {
+  #tank-pool-items.tank-pool-items { max-height: min(52vh, 440px); padding-right: 5px; }
+  .catalog-scroll-hint { padding: 7px 12px; font-size: 10px; }
+}
+@media (max-height: 500px) and (min-width: 701px) {
+  #tank-pool-items.tank-pool-items { max-height: 260px; }
+}
