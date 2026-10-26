@@ -1,0 +1,7 @@
+/* MEMKOLA Tier Lists v4.1: extra info on tank cards. Nation/level
+   catalog filters use native .catalog-filter-group, .catalog-filters,
+   .catalog-filter and .catalog-filter-count from existing styles.css. */
+.tank-card .tank-origin-badge{display:block;max-width:100%;padding:4px 6px;font-size:10px;font-weight:800;color:#ecc27f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center}
+/* Only allows multiple chip rows on phones/tablets when the catalog is wide. */
+#catalog-nation-filters,#catalog-level-filters{flex-wrap:wrap;min-width:0}
+#catalog-nation-filters .catalog-filter,#catalog-level-filters .catalog-filter{white-space:nowrap}

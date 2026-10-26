@@ -1,0 +1,78 @@
+/* MEMKOLA shared wallpaper v1 — background is below all site UI */
+#memkola-site-wallpaper {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  display: none;
+}
+#memkola-site-wallpaper.is-visible { display: block; }
+#memkola-site-wallpaper .memkola-wallpaper-image {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transform: translateZ(0);
+}
+#memkola-site-wallpaper .memkola-wallpaper-shade {
+  position: absolute;
+  inset: 0;
+  background: rgb(6, 11, 18);
+  opacity: .65;
+}
+/* Keep the wallpaper underneath page content, without changing sticky header positioning. */
+body.memkola-has-wallpaper { isolation: isolate; }
+body.memkola-has-wallpaper > main,
+body.memkola-has-wallpaper > .site-footer,
+body.memkola-has-wallpaper > footer { position: relative; z-index: 1; }
+/* Main page header already has sticky positioning. Do not override it. */
+body.memkola-has-wallpaper > .site-header { z-index: 20; }
+/* Other pages use static .topbar headers: z-index has no effect until positioned.
+   Without this, the fixed wallpaper paints over the entire header. */
+body.memkola-has-wallpaper > header:not(.site-header) {
+  position: relative;
+  z-index: 20;
+}
+/* Container Lab used a transparent header; add a subtle surface for contrast. */
+body.memkola-has-wallpaper > header.topbar.shell {
+  background: rgba(11, 19, 29, .94);
+}
+body.memkola-has-wallpaper > .ambient { opacity: .12 !important; pointer-events: none; }
+/* Existing transparent cards stay as-is; dialogs are browser top-layer. */
+#memkola-bg-open { white-space: nowrap; }
+#memkola-bg-dialog {
+  border: 1px solid #415367;
+  border-radius: 18px;
+  background: #121e2a;
+  color: #edf3f8;
+  box-shadow: 0 24px 90px rgba(0,0,0,.65);
+  padding: 0;
+  width: min(94vw, 620px);
+  max-height: min(90dvh, 880px);
+}
+#memkola-bg-dialog::backdrop { background: rgba(3, 7, 11, .82); backdrop-filter: blur(5px); }
+#memkola-bg-form { padding: 26px; display: grid; gap: 18px; overflow-y: auto; max-height: 90dvh; }
+.memkola-bg-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.memkola-bg-kicker { display: block; font-size: 11px; letter-spacing: .17em; color: #ecb45e; font-weight: 800; }
+.memkola-bg-heading h2 { margin: 5px 0 0; font-size: clamp(22px, 3vw, 29px); }
+.memkola-bg-x { border: 1px solid #485a6d; background: #263645; color: #edf3f8; border-radius: 8px; padding: 7px 12px; cursor: pointer; }
+.memkola-bg-field { display: grid; gap: 8px; font-size: 13px; font-weight: 750; }
+.memkola-bg-field input[type=file],.memkola-bg-field select { width: 100%; box-sizing: border-box; padding: 11px; border-radius: 9px; border: 1px solid #46596b; background: #0b141e; color: #edf3f8; font: inherit; }
+.memkola-bg-field input[type=range] { width: 100%; accent-color: #f5b960; cursor: pointer; }
+.memkola-bg-help { font-size: 12px; color: #a5b5c4; margin: 0; line-height: 1.55; }
+.memkola-bg-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.memkola-bg-preview { border: 1px solid #3b4b5c; border-radius: 10px; min-height: 180px; background: #0b131d; overflow: hidden; position: relative; }
+.memkola-bg-preview-label { position: absolute; left: 12px; bottom: 12px; padding: 7px 10px; background: #0b1521cc; border-radius: 6px; color: #fff; font-size: 12px; font-weight: 800; }
+.memkola-bg-preview-image { position: absolute; inset: 0; background-position: center; background-size: cover; background-repeat: no-repeat; }
+.memkola-bg-preview-shade { position: absolute; inset: 0; background: #060b12; opacity: .65; }
+.memkola-bg-actions { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+.memkola-bg-actions-right { display: flex; flex-wrap:wrap; gap:9px; }
+.memkola-bg-button { border:1px solid #526476; background:#213142; color:#ecf3f7; border-radius:9px; min-height:40px; padding:9px 13px; font:inherit; font-size:13px; font-weight:800; cursor:pointer; }
+.memkola-bg-button:disabled { opacity:.55; cursor:wait; }
+.memkola-bg-button.is-primary { color:#171a1d; background:#efb65f; border-color:#efb65f; }
+.memkola-bg-message { min-height:1.4em; font-size:12px; color:#b7c6d4; margin:0; }
+.memkola-bg-message.is-error { color: #ff9f96; }
+@media(max-width: 560px){ #memkola-bg-form { padding:18px; } .memkola-bg-preview {min-height:125px;} }
+

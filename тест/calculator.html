@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1018">
+  <meta name="description" content="Калькулятор статистики WoT Blitz и World of Tanks: сколько боёв нужно до желаемого процента побед или среднего урона, с каким результатом играть и как изменится статистика.">
+  <title>Калькулятор статистики — MEMKOLA wot</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oxanium:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./calculator.css?v=1">
+  <link rel="stylesheet" href="./site-background.css?v=4.9">
+  <script src="./config.js"></script>
+  <script defer src="./calculator-math.js?v=1"></script>
+  <script defer src="./calculator.js?v=1"></script>
+  <script defer src="./site-background.js?v=4.8"></script>
+  <script defer src="./visits-tracker.js?v=1"></script>
+  <link rel="stylesheet" href="./site-nav.css?v=1">
+  <script defer src="./site-nav.js?v=1"></script>
+  <script defer src="./challenge-visibility.js?v=1.45"></script>
+</head>
+<body class="calculator-page">
+<a class="calc-skip" href="#calculator">К расчёту</a>
+<header class="calc-topbar"><div class="calc-shell calc-navigation">
+  <a class="calc-brand" href="./index.html" aria-label="MEMKOLA wot — главная">MEM<span>KOLA</span><small>wot</small></a>
+  <nav aria-label="Разделы сайта"><a href="./index.html">Главная</a><a href="./session.html">Сессионка</a><a href="./calculator.html" aria-current="page">Калькулятор</a><a href="./tournaments.html">Турниры</a><a href="./containers.html">Контейнеры</a></nav>
+</div></header>
+<main class="calc-shell">
+  <section class="calc-hero" aria-labelledby="calc-title">
+    <div><p class="calc-eyebrow"><span></span> MEMKOLA // ИГРАЙ С ЦЕЛЬЮ</p><h1 id="calc-title">КАЛЬКУЛЯТОР<br><span>СТАТИСТИКИ.</span></h1><p class="calc-intro">От сегодняшней статы — к следующей цели.<br>Рассчитай бои, нужный результат и время на прогресс.</p><div class="calc-hero-tags"><span>WoT Blitz / World of Tanks</span><span>Без регистрации</span></div></div>
+    <div class="calc-hero-visual" aria-hidden="true"><div class="calc-visual-top">ТВОЯ СЛЕДУЮЩАЯ ПЛАНКА <span>↗</span></div><div class="calc-visual-numbers"><span>55<small>%</small></span><i>→</i><strong>60<small>%</small></strong></div><div class="calc-visual-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="calc-visual-bottom"><span>СТАТИСТИКА</span><span>ПЛАН</span><span>РЕЗУЛЬТАТ</span></div></div>
+  </section>
+  <section id="calculator" class="calc-workspace" aria-label="Расчёт статистики">
+    <div class="calc-metric-tabs" role="group" aria-label="Показатель">
+      <button type="button" class="calc-metric active" data-metric="winrate" aria-pressed="true"><span class="calc-metric-symbol" aria-hidden="true">%</span><span><strong>Процент побед</strong><small>Путь к желаемому винрейту</small></span><span class="calc-tab-mark" aria-hidden="true">↗</span></button>
+      <button type="button" class="calc-metric" data-metric="average" aria-pressed="false"><span class="calc-metric-symbol calc-crosshair" aria-hidden="true">⌖</span><span><strong>Средние показатели</strong><small>Урон, опыт, фраги и другое</small></span><span class="calc-tab-mark" aria-hidden="true">↗</span></button>
+    </div>
+    <div class="calc-mode-tabs" role="group" aria-label="Что рассчитать">
+      <button type="button" data-mode="reach" aria-pressed="true" class="active"><span>01</span> Боёв до цели</button>
+      <button type="button" data-mode="required" aria-pressed="false"><span>02</span> Нужный результат</button>
+      <button type="button" data-mode="forecast" aria-pressed="false"><span>03</span> Прогноз серии</button>
+    </div>
+    <div class="calc-grid">
+      <section class="calc-input-panel" aria-labelledby="calc-form-title">
+        <div class="calc-panel-heading"><div><p class="calc-eyebrow">ИСХОДНЫЕ ДАННЫЕ</p><h2 id="calc-form-title">Задай свою цель</h2></div><button type="button" id="calc-clear" class="calc-text-button">Очистить</button></div>
+        <p class="calc-state-label" id="calc-input-state">Пример расчёта · подставь свои данные</p>
+        <form id="calc-form" novalidate>
+          <div class="calc-field" id="calc-metric-select-wrap" hidden><label for="calc-average-kind">Какой показатель считаем</label><select id="calc-average-kind"><option value="damage">Средний урон</option><option value="experience">Средний опыт</option><option value="frags">Танков уничтожено за бой</option><option value="spots">Танков обнаружено за бой</option><option value="custom">Другой средний показатель</option></select></div>
+          <div class="calc-field" id="calc-custom-wrap" hidden><label for="calc-custom-name">Название показателя</label><input id="calc-custom-name" type="text" maxlength="40" placeholder="Например, средний заблокированный урон"></div>
+          <div class="calc-field"><label for="calc-battles">Текущее количество боёв</label><div class="calc-input-wrap"><input id="calc-battles" inputmode="numeric" type="text" autocomplete="off" placeholder="Например, 10 000" aria-describedby="calc-battles-error"><span>боёв</span></div><small class="calc-field-error" id="calc-battles-error"></small></div>
+          <div class="calc-field"><div class="calc-label-row"><label for="calc-current" id="calc-current-label">Текущий процент побед</label><label class="calc-exact-switch" id="calc-exact-wrap"><input type="checkbox" id="calc-exact">Знаю число побед</label></div><div class="calc-input-wrap"><input id="calc-current" inputmode="decimal" type="text" autocomplete="off" placeholder="55" aria-describedby="calc-current-error calc-current-hint"><span id="calc-current-unit">%</span></div><small class="calc-field-error" id="calc-current-error"></small><small class="calc-field-hint" id="calc-current-hint">Точное число побед даёт более точный расчёт.</small></div>
+          <div class="calc-field" id="calc-target-wrap"><label for="calc-target" id="calc-target-label">Желаемый процент побед</label><div class="calc-input-wrap calc-input-goal"><input id="calc-target" inputmode="decimal" type="text" autocomplete="off" placeholder="60" aria-describedby="calc-target-error"><span id="calc-target-unit">%</span></div><small class="calc-field-error" id="calc-target-error"></small></div>
+          <div class="calc-field" id="calc-future-wrap"><label for="calc-future" id="calc-future-label">Винрейт в будущих боях</label><div class="calc-input-wrap"><input id="calc-future" inputmode="decimal" type="text" autocomplete="off" placeholder="70" aria-describedby="calc-future-error calc-future-hint"><span id="calc-future-unit">%</span></div><small class="calc-field-error" id="calc-future-error"></small><small class="calc-field-hint" id="calc-future-hint">Средний результат, который планируешь держать.</small></div>
+          <div class="calc-field" id="calc-series-wrap" hidden><label for="calc-series">Сколько боёв планируешь сыграть</label><div class="calc-input-wrap"><input id="calc-series" inputmode="numeric" type="text" autocomplete="off" placeholder="Например, 1 000" aria-describedby="calc-series-error"><span>боёв</span></div><small class="calc-field-error" id="calc-series-error"></small></div>
+          <div class="calc-daily-field"><div><label for="calc-daily">Боёв в день <span>необязательно</span></label><p>Чтобы прикинуть срок до цели</p></div><div class="calc-field"><input id="calc-daily" inputmode="numeric" type="text" autocomplete="off" placeholder="30" aria-describedby="calc-daily-error"><small class="calc-field-error" id="calc-daily-error"></small></div></div>
+          <button type="submit" class="calc-submit">Рассчитать <span aria-hidden="true">↗</span></button>
+          <button type="button" class="calc-example" id="calc-example">Подставить пример</button>
+        </form>
+      </section>
+      <section class="calc-output-panel" aria-label="Результат расчёта">
+        <div class="calc-result-top"><p class="calc-eyebrow">ТВОЙ МАРШРУТ К ЦЕЛИ</p><span class="calc-result-status" id="calc-result-status">Прогноз</span></div>
+        <div id="calc-summary" class="calc-summary" role="status" aria-live="polite" aria-atomic="true"></div>
+        <div id="calc-result-details" hidden>
+          <div id="calc-stats" class="calc-stats"></div>
+          <div class="calc-chart-heading"><h3>Как изменится показатель</h3><span><i></i> Прогноз <b></b> Цель</span></div>
+          <div id="calc-chart" class="calc-chart"></div>
+          <p class="calc-chart-caption" id="calc-chart-caption"></p>
+          <div class="calc-scenarios" id="calc-scenarios"><div class="calc-scenarios-heading"><h3>А если играть иначе?</h3><span>Выбери темп</span></div><div id="calc-scenario-options" class="calc-scenario-options"></div></div>
+          <p class="calc-precision-note" id="calc-precision-note"></p>
+          <button type="button" id="calc-copy" class="calc-copy">Скопировать расчёт <span aria-hidden="true">↗</span></button>
+          <p class="calc-copy-status" id="calc-copy-status" role="status"></p>
+          <textarea id="calc-copy-fallback" aria-label="Текст расчёта для копирования" readonly hidden></textarea>
+        </div>
+        <div id="calc-result-help" class="calc-result-help" hidden></div>
+      </section>
+    </div>
+    <noscript><p class="calc-noscript">Для расчётов включи JavaScript в браузере. Данные обрабатываются на твоём устройстве.</p></noscript>
+  </section>
+  <section class="calc-guide" aria-label="Как пользоваться калькулятором"><div><span>01 / ВЫБЕРИ СТАТИСТИКУ</span><h3>Аккаунт или один танк</h3><p>Бои и показатель должны относиться к одной выборке: всему аккаунту, одному танку или одному режиму.</p></div><div><span>02 / ЗАДАЙ РЕАЛЬНЫЙ ТЕМП</span><h3>Будущие бои решают</h3><p>Чтобы поднять общий показатель, результат новых боёв должен быть выше желаемого. Чем ближе он к цели, тем дольше путь.</p></div><div><span>03 / СЛЕДИ ЗА ПРОГРЕССОМ</span><h3>Проверяй по ходу игры</h3><p>Это математический прогноз при выбранном темпе. Обновляй исходные данные после серии и <a href="./session.html">следи за сессионкой ↗</a>.</p></div></section>
+  <details class="calc-explanation"><summary>Как устроен расчёт и откуда берётся погрешность <span aria-hidden="true">+</span></summary><div><p>Общий показатель после серии = (старые бои × текущий показатель + новые бои × результат серии) ÷ общее количество боёв.</p><p>Для роста до цели: новые бои = старые бои × (цель − текущий показатель) ÷ (результат новых боёв − цель). Число боёв округляется вверх. Если темп равен цели, общий результат только приближается к ней.</p><p>Проценты и средние в игре округляются. Для винрейта точнее вводить число побед. Прогноз с заданным процентом будущих побед — оценка: в реальной серии победы всегда целые. Режим «Нужный результат» округляет необходимое число побед вверх.</p><p>Средние показатели считаются по боям. WN8, WN7, рейтинг и другие индексы с отдельной формулой сюда не подходят. При уроне или опыте результат может зависеть от округления исходного среднего.</p><p>Введённые значения сохраняются только в этом браузере. «Очистить» очищает значения выбранного показателя.</p></div></details>
+</main>
+<footer class="calc-footer calc-shell"><a class="calc-brand" href="./index.html">MEM<span>KOLA</span><small>wot</small></a><p>Меньше догадок. Больше понятных целей.</p><a href="./index.html">На главную ↗</a></footer>
+</body>
+</html>

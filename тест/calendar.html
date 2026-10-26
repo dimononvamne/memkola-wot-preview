@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1018">
+  <meta name="description" content="Календарь отобранных турниров WoT Blitz EU: даты, форматы, награды и регистрация. MEMKOLA wot.">
+  <title>Календарь турниров WoT Blitz EU — MEMKOLA wot</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oxanium:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./calendar.css?v=2">
+  <link rel="stylesheet" href="./site-background.css?v=4.9">
+  <script src="./config.js"></script>
+  <script type="module" src="./calendar.js?v=2"></script>
+  <script defer src="./site-background.js?v=4.8"></script>
+  <script defer src="./visits-tracker.js?v=1"></script>
+  <link rel="stylesheet" href="./site-nav.css?v=1">
+  <script defer src="./site-nav.js?v=1"></script>
+  <script defer src="./challenge-visibility.js?v=1.45"></script>
+</head>
+<body>
+<header class="cal-topbar"><div class="cal-shell cal-topbar-inner">
+  <a href="./index.html" class="cal-brand">MEM<span>KOLA</span> <small>wot</small></a>
+  <nav aria-label="Навигация"><a href="./index.html" class="cal-back">← Главная</a><a href="./tournaments.html" class="cal-back">🏆 Турниры сообщества</a><button type="button" class="cal-button cal-ghost" id="cal-auth">Вход для автора</button><a class="cal-back" href="./calculator.html">Калькулятор</a></nav>
+</div></header>
+<main class="cal-shell">
+  <section class="cal-hero">
+    <div class="cal-eyebrow">MEMKOLA // BLITZ EU TOURNAMENT CALENDAR</div>
+    <h1>КАЛЕНДАРЬ <span>ТУРНИРОВ.</span></h1>
+    <p>Соревнования WoT Blitz на европейском сервере. Только отобранные нами события: даты, форматы, награды и ссылки для участия.</p>
+  </section>
+  <nav class="cal-sections" aria-label="Разделы турниров">
+    <a href="./tournaments.html" class="cal-section"><span aria-hidden="true">🏆</span><strong>Турниры сообщества</strong><small>MEM CUP, участники и онлайн-табло</small></a>
+    <a href="./calendar.html" aria-current="page" class="cal-section active"><span aria-hidden="true">📅</span><strong>Календарь турниров WoT Blitz</strong><small>Выбранные турниры EU</small></a>
+  </nav>
+  <section id="cal-admin-panel" class="cal-admin-panel" hidden>
+    <div><strong>⚙ РЕЖИМ РЕДАКТОРА</strong><p>Добавляй только нужные турниры. Черновики зрителям не показываются.</p></div>
+    <div class="cal-admin-actions"><button class="cal-button cal-ghost" id="cal-background-open" type="button">🖼 Фон месяца</button><button class="cal-button cal-gold" id="cal-create" type="button">＋ Добавить турнир</button></div>
+  </section>
+  <section class="cal-board" aria-label="Календарь EU">
+    <div class="cal-board-heading">
+      <div><div class="cal-eyebrow">EU // SCHEDULE</div><h2>Расписание турниров</h2><p id="cal-state" class="cal-muted" role="status" aria-live="polite">Загружаем события…</p></div>
+      <div class="cal-month-switch"><button id="cal-prev" type="button" aria-label="Предыдущий месяц">‹</button><input id="cal-month" type="month" aria-label="Выбрать месяц"><button id="cal-next" type="button" aria-label="Следующий месяц">›</button></div>
+    </div>
+    <div class="cal-content">
+      <div class="cal-panel cal-calendar-panel">
+        <div class="cal-month-background" id="cal-photo" aria-hidden="true"></div><div class="cal-month-shade" id="cal-month-shade" aria-hidden="true"></div>
+        <div class="cal-month-caption"><h3 id="cal-month-label">ОКТЯБРЬ <span>(EU)</span></h3><p>Время указано по европейскому серверу (CET/CEST)</p></div>
+        <div class="cal-weekdays" aria-hidden="true"><span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span>СБ</span><span>ВС</span></div>
+        <div id="cal-days" class="cal-days" role="grid" aria-label="Дни месяца"></div>
+        <div class="cal-legend" aria-label="Обозначение форматов"><span class="fmt-1">● 1×1</span><span class="fmt-2">● 2×2</span><span class="fmt-3">● 3×3</span><span class="fmt-5">● 5×5</span><span class="fmt-7">● 7×7</span><span class="fmt-other">● Другое</span></div>
+      </div>
+      <aside class="cal-panel cal-sidebar"><div class="cal-sidebar-head"><div><h3>Турниры месяца</h3><span id="cal-total">0 событий</span></div><button id="cal-show-all" type="button" class="cal-subtle" hidden>Показать все</button></div><div id="cal-selection" class="cal-selected-label" hidden></div><div id="cal-agenda" class="cal-agenda"></div></aside>
+    </div>
+  </section>
+</main>
+<footer class="cal-footer"><div class="cal-shell">© MEMKOLA wot · Неофициальный выборочный календарь · EU <a href="./tournaments.html">Турниры сообщества ↗</a></div></footer>
+<div id="cal-toast" class="cal-toast" role="status" aria-live="polite"></div>
+<dialog id="cal-login-dialog" class="cal-dialog"><form id="cal-login-form" class="cal-form"><header><h2>Вход организатора</h2><button type="button" class="cal-x" data-close aria-label="Закрыть">×</button></header><p>Тот же аккаунт, что и в редакторе MEMKOLA WOT.</p><label>Email<input type="email" id="cal-email" required autocomplete="username"></label><label>Пароль<input type="password" id="cal-password" required autocomplete="current-password"></label><p id="cal-login-error" class="cal-error" role="alert"></p><button class="cal-button cal-gold" type="submit">Войти</button></form></dialog>
+<dialog id="cal-event-dialog" class="cal-dialog cal-dialog-wide"><form id="cal-event-form" class="cal-form"><header><h2 id="cal-event-heading">Добавить турнир</h2><button type="button" class="cal-x" data-close aria-label="Закрыть">×</button></header>
+  <div class="cal-field-grid"><label class="cal-field-full">Название турнира<input id="ce-title" required minlength="2" maxlength="130" placeholder="Например, 7 на 7 (контейнеры)"></label><label>Дата турнира<input id="ce-date" type="date" required></label><label>Время начала (EU)<input id="ce-time" type="time" aria-describedby="ce-time-hint"></label><label>Формат<select id="ce-format"><option value="1x1">1 × 1</option><option value="2x2">2 × 2</option><option value="3x3">3 × 3</option><option value="5x5">5 × 5</option><option value="7x7">7 × 7</option><option value="other">Другой / особый турнир</option></select></label><label>Цвет карточки<select id="ce-color"><option value="gold">Золотой</option><option value="purple">Фиолетовый</option><option value="green">Зелёный</option><option value="blue">Синий</option><option value="red">Красный</option></select></label><label class="cal-field-full">Награды<input id="ce-prize" maxlength="220" placeholder="Золото, контейнеры, свободный опыт…"></label><label class="cal-field-full">Ссылка на регистрацию (необязательно)<input id="ce-url" type="url" inputmode="url" maxlength="750" placeholder="https://..."></label><label class="cal-field-full">Описание / дополнительные условия<textarea id="ce-notes" rows="3" maxlength="3000" placeholder="Важные условия, этапы, режим боя…"></textarea></label></div>
+  <label class="cal-publish"><input id="ce-published" type="checkbox" checked><span><strong>Опубликовать для зрителей</strong><small>Если снять галочку, событие останется черновиком и будет видно только тебе.</small></span></label>
+  <div class="cal-form-footer"><button class="cal-button cal-danger" id="ce-delete" type="button" hidden>Удалить</button><span id="ce-error" class="cal-error" role="alert"></span><button type="submit" id="ce-save" class="cal-button cal-gold">Сохранить турнир</button></div>
+</form></dialog>
+<dialog id="cal-detail-dialog" class="cal-dialog cal-dialog-wide"><section class="cal-detail"><header><div class="cal-eyebrow">MEMKOLA // BLITZ EU</div><button type="button" class="cal-x" data-close aria-label="Закрыть">×</button></header><h2 id="cd-title"></h2><div class="cal-detail-stats"><span id="cd-date"></span><span id="cd-format"></span></div><h3>Награды</h3><p id="cd-prize"></p><div id="cd-notes-wrap"><h3>Подробности</h3><p id="cd-notes" class="cal-preserve"></p></div><div class="cal-detail-actions"><a id="cd-link" href="#" target="_blank" rel="noopener noreferrer" class="cal-button cal-gold" hidden>Регистрация ↗</a><button type="button" class="cal-button cal-ghost" id="cd-copy">🔗 Поделиться</button><button type="button" class="cal-button cal-ghost" id="cd-edit" hidden>✎ Изменить</button></div></section></dialog>
+<dialog id="cal-image-dialog" class="cal-dialog"><form id="cal-image-form" class="cal-form"><header><h2>Фон месяца</h2><button class="cal-x" type="button" data-close aria-label="Закрыть">×</button></header><p>Картинка будет видна всем на фоне календарной сетки выбранного месяца.</p><label>Изображение JPG / PNG / WEBP (до 5 МБ)<input id="ci-file" type="file" accept="image/png,image/jpeg,image/webp"></label><div class="cal-img-preview" id="ci-preview">Предпросмотр фона</div><label>Затемнение <output id="ci-opacity-val">62%</output><input type="range" min="20" max="90" step="1" value="62" id="ci-opacity"></label><label class="cal-publish"><input id="ci-reset" type="checkbox"><span>Убрать отдельный фон месяца (будет стандартный фон сайта)</span></label><p class="cal-error" id="ci-error" role="alert"></p><button class="cal-button cal-gold" id="ci-save" type="submit">Сохранить оформление</button></form></dialog>
+</body>
+</html>

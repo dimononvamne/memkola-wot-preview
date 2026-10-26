@@ -1,0 +1,6 @@
+/* MEMKOLA home-page promo for OBS / StreamChamp session widgets. */
+.widgets-promo{display:flex;gap:22px;align-items:center;padding:25px 28px;margin:22px 0;border-radius:15px;border:1px solid #316b7c;background:linear-gradient(100deg,#142b40 0%,#102125 60%,#152b35 100%);box-shadow:0 16px 45px #0001}
+.widgets-promo-icon{display:grid;place-items:center;flex:0 0 62px;font-size:30px;filter:drop-shadow(0 3px 7px #0009)}
+.widgets-promo>div{flex:1}.widgets-promo h2{margin:6px 0 7px;font-size:23px;color:#eaf5ff}.widgets-promo p{color:#a9c4d7;margin:0;max-width:740px;line-height:1.5;font-size:13px}
+.widgets-promo-kicker{font-size:10px;letter-spacing:.13em;font-weight:900;color:#62dafb}.widgets-promo>a{white-space:nowrap;text-decoration:none}
+@media(max-width:750px){.widgets-promo{flex-wrap:wrap;padding:22px;gap:14px}.widgets-promo-icon{flex-basis:40px}.widgets-promo>a{width:100%;text-align:center}.widgets-nav-btn{padding-inline:10px!important}}

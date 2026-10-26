@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1018"><meta name="description" content="MEMKOLA wot: отслеживание игровых сессий World of Tanks Blitz EU для себя и друзей.">
+  <title>Сессионка — MEMKOLA wot</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oxanium:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./session.css?v=19.1"><script src="./config.js"></script><script defer src="./session-model.js?v=19.1"></script><script defer src="./session.js?v=19.3-eba6fa94f5de"></script>
+
+<!-- MEMKOLA shared background: public wallpaper (managed on homepage) -->
+<link rel="stylesheet" href="./site-background.css?v=4.9">
+<script defer src="./site-background.js?v=4.8"></script>
+  <script defer src="./visits-tracker.js?v=1"></script>
+  <style id="challenge-nav-visibility">html:not(.challenge-nav-shown) .challenge-nav-link,html:not(.challenge-nav-shown) .challenge-nav-btn{display:none!important}</style>
+  <script defer src="./challenge-visibility.js?v=1.45"></script>
+  <link rel="stylesheet" href="./site-nav.css?v=1">
+  <script defer src="./site-nav.js?v=1"></script>
+</head>
+<body>
+  <header class="topbar"><div class="shell topbar-inner"><a href="./index.html" class="brand">MEM<span>KOLA</span><small> WOT</small></a><nav><a href="./index.html">Тир-листы</a><a class="challenge-nav-link" href="./challenges.html">🎯 Челленджи</a><a href="./tournaments.html">🏆 Турниры</a><a href="./widgets.html">🎥 Виджеты</a><a href="./calculator.html">Калькулятор</a></nav></div></header>
+  <main class="shell">
+    <section class="hero"><div class="eyebrow">MEMKOLA // SESSION TRACKER · EU</div><h1>СЕССИОНКА<span>.</span></h1><p>Смотри свою игровую сессию или следи за чужой во время стрима. Статистика обновляется из открытого API World of Tanks Blitz.</p><div class="hero-info"><span>🎯 Любой ник EU</span><span>📊 Результаты за сессию</span><span>🚀 Танки и урон</span></div></section>
+    <section class="panel search-panel" aria-labelledby="lookup-title"><div class="section-title"><div><div class="eyebrow">ПОИСК / ИГРОКИ</div><h2 id="lookup-title">Найти игрока</h2></div><span class="dim">EU · World of Tanks Blitz</span></div>
+      <form id="search-form" class="search-form"><label for="nickname" class="sr-only">Ник игрока</label><input id="nickname" maxlength="32" required placeholder="Введи ник, например GOLDishkin" autocomplete="off"><button id="search-button" class="btn btn-gold" type="submit">Найти игрока</button></form>
+      <p class="muted small">Можно следить за собой или любым другим игроком. Уже запущенная сессия доступна всем по одной ссылке.</p><div id="search-result" class="search-result" hidden></div>
+    </section>
+    <section class="panel profile" id="profile-panel" hidden><div class="section-title"><div><div class="eyebrow">PLAYER // ACCOUNT</div><h2 id="profile-name">—</h2></div><div class="profile-actions"><button id="start-button" class="btn btn-gold">▶ Начать сессию</button></div></div><div id="profile-summary" class="stats-grid"></div><p class="muted small">Показана общая статистика аккаунта на момент запроса. Сессионные результаты появятся после запуска отслеживания.</p></section>
+    <section id="session-panel" class="session-board" hidden>
+      <div class="section-title session-title"><div><div class="eyebrow">LIVE / SESSION DETAILS</div><h2><span id="session-name">—</span> <span id="session-live" class="live-pill">В ЭФИРЕ</span></h2><p class="muted" id="session-times"></p></div><div class="session-actions"><a class="btn btn-ghost" id="widgets-session-link" href="./widgets.html">🎥 Виджет для стрима</a><button class="btn btn-ghost" id="share-button">↗ Поделиться</button><button class="btn btn-ghost" id="refresh-button">↻ Обновить</button><button class="btn btn-danger" id="finish-button" hidden>Завершить</button><button class="btn btn-ghost" id="forget-button" title="Закрывает просмотр в этом браузере, но не завершает сессию">✕ Закрыть просмотр</button></div></div>
+      <div class="session-toolbar"><div class="mode-switch" role="group" aria-label="Статистика по режимам"><button id="mode-overall" class="chip selected" aria-pressed="true">Обычные бои</button><button id="mode-rating" class="chip" aria-pressed="false">Рейтинговые бои</button></div><span class="small muted">За время сессии</span></div>
+      <div id="session-stats" class="stats-grid session-primary" aria-label="Общие итоги сессии"></div>
+      <div id="rating-strip" class="rating-strip" hidden aria-label="Рейтинг игрока"></div>
+      <p id="session-data-note" class="small muted" hidden></p>
+      <details id="session-details" class="session-details">
+        <summary><span><span class="details-closed">Подробнее о сессии</span><span class="details-open">Свернуть подробности</span><small>Точность, показатели и результаты по танкам</small></span><span class="details-chevron" aria-hidden="true">⌄</span></summary>
+        <div class="details-content">
+          <section aria-labelledby="details-heading"><div class="section-title"><div><div class="eyebrow">СТАТИСТИКА СЕССИИ</div><h3 id="details-heading">Все показатели</h3></div><div class="wr-legend" aria-label="Цвета процента побед"><span class="wr-purple">70–100%</span><span class="wr-blue">60–69,99%</span><span class="wr-green">50–59,99%</span><span class="wr-white">ниже 50%</span></div></div><div id="session-detail-stats" class="stats-grid detail-stats"></div></section>
+          <section class="vehicle-panel" aria-labelledby="vehicles-heading"><div class="section-title"><div><div class="eyebrow">РЕЗУЛЬТАТЫ ПО ТЕХНИКЕ</div><h3 id="vehicles-heading">На каких танках играл</h3></div><span id="tank-count" class="dim">—</span></div><p id="tank-note" class="muted small"></p><div id="tank-names" class="tank-names" aria-label="Танки за сессию"></div><div class="table-scroll" tabindex="0" role="region" aria-label="Результаты по танкам"><table class="session-tanks"><caption class="sr-only">Показатели каждого танка за время сессии в выбранном режиме</caption><thead><tr><th scope="col">Танк</th><th scope="col">Бои</th><th scope="col">Победы</th><th scope="col">Винрейт</th><th scope="col">Ср. урон</th><th scope="col">Всего урона</th><th scope="col">Точность</th><th scope="col">Уничтожено</th><th scope="col">Детали</th></tr></thead><tbody id="tanks-body"></tbody></table></div></section>
+          <p class="notice">Данные Wargaming могут запаздывать. Проверка — не чаще раза в 90 секунд. Статистика рассчитывается по разнице показателей; отдельный журнал каждого боя недоступен. Прочерк означает, что данных для расчёта нет.</p>
+          <button id="collapse-details" class="btn btn-ghost" type="button">Свернуть подробности ↑</button>
+        </div>
+      </details>
+    </section>
+    <section class="history panel" id="history-panel" hidden><div class="section-title"><div><div class="eyebrow">HISTORY</div><h3 id="history-heading">История сессий по дням</h3></div><span class="dim">Даты: московское время</span></div><p class="muted small">История строится по снимкам статистики. Если обновления не было возле полуночи, часть боёв может попасть в соседний день. Старые сессии до v18 не содержат точной дневной разбивки. Удаление дня скрывает его из истории, но не меняет общий результат сессии.</p><div id="history-list"></div></section>
+    <p id="connection" class="connection" aria-live="polite"></p>
+  </main>
+  <footer class="shell">© MEMKOLA wot · Фанатский аналитический сервис. Не связан с Wargaming. <a href="./index.html">Вернуться к тир-листам ↗</a></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>
